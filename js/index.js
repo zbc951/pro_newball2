@@ -18,8 +18,8 @@ $(document).ready(function() {
         'v_ball',
         'motor_sport',
         'badminton',
-        'football',
         'bso',
+        'football',
         'table_ball'
     ];
     var left_taget =[
