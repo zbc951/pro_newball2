@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=1920,user-scalable=yes">
+  <!--RWD-->
+  <!--main.css-->
+  <link rel="stylesheet" href="../../css/main.css" />
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- swiper -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
+  <title>new_ball_2</title>
+</head>
+
+<header class="cn">
+  <div class="time_line">
+    <div class="time_box">
+      <div class="right_box">
+        <p>GMT+8　2020-05-07　10:13:44</p>
+      </div>
+    </div>
+  </div>
+  <div class="h_box">
+    <div class="h_wrap other_size">
+      <div class="logo">
+        <h1> <a href="../../index.html"></a></h1>
+      </div>
+      <ul class="m_yet">
+        <li>
+          <p>市場列表</p>
+          <a href="../../index.html"></a>
+        </li>
+        <!-- <li><p>熱門賽事</p></li>
+            <li><p>今日賽事</p></li> -->
+        <li>
+          <i class="i1"></i>
+          <p>優惠</p>
+          <a href="../event/event.html"></a>
+        </li>
+        <!-- <li><i class="i2"></i><p>贊助</p> -->
+        </li>
+        <li class="active"><i class="i3"></i>
+          <p>我的</p> <a href="./my_data.html"></a>
+        </li>
+      </ul>
+      <div class="right">
+        <div class="sign_yet ">
+          <div class="wrap">
+            <i></i>
+            <p><span class="in">登入</span> / <span class="up">註冊</span></p>
+          </div>
+        </div>
+        <div class="sign_in active">
+          <div class="wrap">
+            <div class="row">
+              <p class="gray">user545</p>
+              <div class="vip"><i></i>
+                <p>0</p>
+              </div>
+
+            </div>
+            <div class="row bot">
+              <p class="blue my_money">NT$ <span>0.00</span></p>
+              <i class="q"></i>
+              <button class="sign_out">
+                <p>登出</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<header class="en" style='display: none;'>
+  <div class="time_line">
+    <p>
+      GMT+8　2020-05-07　10:13:44
+    </p>
+  </div>
+  <div class="h_box">
+    <div class="h_wrap">
+      <div class="logo">
+        <h1></h1>
+      </div>
+      <ul class="m_yet">
+        <li class="active">
+          <p>Home</p>
+        </li>
+        <li>
+          <p>Highlight</p>
+        </li>
+        <li>
+          <p>Today'sEvents</p>
+        </li>
+        <li><i class="i1"></i>Sponsorship</li>
+        <li><i class="i2"></i>Discount</li>
+        <li><i class="i3"></i>
+          <p>My&ensp;Account</p>
+        </li>
+      </ul>
+      <div class="right">
+        <div class="sign_yet active">
+          <div class="wrap">
+            <i></i>
+            <p><span class="in">Log&ensp;in</span> / <span class="up">Sign&ensp;up</span></p>
+          </div>
+        </div>
+        <div class="sign_in">
+          <div class="wrap">
+            <div class="row">
+              <p class="gray">user545</p>
+              <div class="vip"><i></i>
+                <p>0</p>
+              </div>
+            </div>
+            <div class="row bot">
+              <p class="blue">NT$ <span>0.00</span></p><i class="q"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!--藉由containerfixed 使用mobile模式-->
+
+<aside class="bet_solo black_bg" style="display: none;">
+  <div class="bet_box blue">
+    <div class="title">
+      <p>賽事投注</p>
+      <p class="hidden_i_block">-注單確認</p>
+      <span class="close"></span>
+    </div>
+    <div class="content">
+      <ul class="bets">
+        <li class="line">
+          <div class="bet_gn">
+            <span class="i3"></span>
+            <p>足球-全場-獨贏</p>
+          </div>
+        </li>
+        <li>
+          <div class="bet_bill">
+            <div class="f_box b50">
+              <em class="wrap">
+                <span class="line_box"></span>
+                <span class="team_n">維羅納</span>
+                <span class="team_n">@ <span class="team_n red">1.95</span> </span>
+              </em>
+            </div>
+            <div class="f_box b50">
+              <em class="wrap">
+                <span class="bet_row">
+                  <span>義大利甲組聯賽&ensp;</span><span class="hidden_i_block">F1550701</span>
+                </span>
+                <span class="bet_row">
+                  <span>拉素[主]</span>
+                  <span class="red">2+50</span>
+                  <span class="blue">vs</span>
+                  <span>維羅納</span>
+                </span>
+              </em>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="total">
+            <div class="f_box b33">
+              <em class="wrap">
+                <span>可贏(參考):</span>
+                <span class="l_blue">150</span>
+              </em>
+            </div>
+            <div class="f_box b33">
+              <em class="wrap">
+                <span>單注限額:</span>
+                <span class="l_blue">150</span>
+              </em>
+            </div>
+            <div class="f_box b33">
+              <em class="wrap">
+                <span>餘額:</span>
+                <span class="l_blue">150</span>
+              </em>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="computer active">
+            <div class="f_box b48">
+              <div class="row for_input">
+                <p>投注金額</p>
+                <input type="text" class="bet_in" placeholder="最低限額150">
+              </div>
+              <div class="row">
+                <p>可贏金額(參考)</p>
+                <input class="red" type="text">
+              </div>
+            </div>
+            <div class="f_box b52">
+              <div class="row">
+                <button class="f_box b30">+100</button>
+                <button class="f_box b30">+100</button>
+                <button class="f_box b30">+100</button>
+              </div>
+              <div class="row">
+                <button class="f_box b30">+100</button>
+                <button class="f_box b30">+100</button>
+                <button class="f_box b30">+100</button>
+              </div>
+              <div class="row">
+                <button class="f_box b30">取消</button>
+                <button class="f_box b617 bet_btn">投注</button>
+              </div>
+            </div>
+          </div>
+          <div class="check_page">
+            <div class="b50 f_box">
+              <em class="wrap">
+                <span class="check_icon"></span>
+                <span class="l_blue">注單已確認</span>
+              </em>
+            </div>
+            <div class="b50 f_box">
+              <em class="wrap">
+                <span class="bet_row">
+                  <span>下注時間:&ensp;</span><span>2020-05-27 16:26:07</span>
+                </span>
+                <span class="bet_row">
+                  <span>單號:&ensp;</span><span class="d_blue">CPR09621621</span>
+                </span>
+              </em>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</aside>
+
+
+
+<div class="container cn">
+  <main class="my_page">
+    <div class="left ">
+      <ul class="index">
+        <li><i class="i1"></i>
+          <p>我的最愛</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i2"></i>
+          <p>熱門賽事</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i3"></i>
+          <p>足球</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i4"></i>
+          <p>棒球</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i5"></i>
+          <p>籃球</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i6"></i>
+          <p>賽馬賽狗</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i7"></i>
+          <p>電競</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i8"></i>
+          <p>股票指數</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i9"></i>
+          <p>彩球</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i10"></i>
+          <p>冰球</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i11"></i>
+          <p>網球</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i12"></i>
+          <p>斯諾克</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i13"></i>
+          <p>排球</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i14"></i>
+          <p>賽車</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i15"></i>
+          <p>羽毛球</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i16"></i>
+          <p>美式足球</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i17"></i>
+          <p>沙灘足球</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i18"></i>
+          <p>乒乓球</p>
+          <p class="num">295</p>
+        </li>
+      </ul>
+      <ul class="my_page active">
+        <div class="avatar_wrap">
+          <div class="avatar"></div>
+          <div class="n_wrap">
+            <p class="name">user545</p>
+            <div class="vip"><i></i>
+              <p>0</p>
+            </div>
+          </div>
+          <p class="day">加入第6天</p>
+        </div>
+        <div class="box_3">
+          <div class="box"><i class="cash i1"></i>
+            <p>存款</p><a href="./my_bill_save.html"></a>
+          </div>
+          <div class="box"><i class="cash i2"></i>
+            <p>轉點</p>
+            <a href="./my_bill_trans.html"></a>
+          </div>
+          <div class="box"><i class="cash i3"></i>
+            <p>取款</p>
+            <a href="./my_bill_get_cash.html"></a>
+          </div>
+        </div>
+        <li>
+          <i class="i1"></i>
+          <p class="name">個人資料</p>
+          <a href="./my_data.html"></a>
+        </li>
+        <div class="blue_line"></div>
+        <li>
+          <i class="i3"></i>
+          <p class="name">我的錢包</p>
+          <a href="./my_bill_money_bag.html"></a>
+        </li>
+        <li>
+          <i class="i4"></i>
+          <p class="name">交易紀錄</p>
+          <p class="num active">6</p>
+          <a href="./my_bill_trans_record.html"></a>
+        </li>
+        <li class="active">
+          <i class="i5"></i>
+          <p class="name">即時注單</p>
+          <p class="num active">2</p>
+          <a href="./my_bill_now.html"></a>
+        </li>
+        <li>
+          <i class="i6"></i>
+          <p class="name">投注紀錄</p>
+          <p class="num active">3</p>
+          <a href="./my_bill_record.html"></a>
+        </li>
+        <div class="blue_line"></div>
+        <li>
+          <i class="i8"></i>
+          <p class="name">幫助中心</p>
+          <a href="./my_help.html"></a>
+        </li>
+        <li>
+          <i class="i9"></i>
+          <p class="name">聯繫我們</p>
+          <a href="./my_contact_us.html"></a>
+        </li>
+        <li>
+          <i class="i10"></i>
+          <p class="name">消息中心</p>
+          <p class="num active">6</p>
+          <a href="./my_message.html"></a>
+        </li>
+        <li>
+          <i class="i11"></i>
+          <p class="name">設定</p>
+          <a href="./my_set.html"></a>
+        </li>
+        <div class="blue_line"></div>
+        <li>
+          <i class="i12"></i>
+          <p class="name">關於</p>
+          <a href="./my_about.html"></a>
+        </li>
+        <li>
+          <i class="i13"></i>
+          <p class="name">加入我們</p>
+          <a href="./my_join_us.html"></a>
+        </li>
+        <li>
+          <i class="i14"></i>
+          <p class="name">下載APP</p>
+          <a href="./my_download_app.html"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="wrap none">
+        <div class="game_in my_page_bill">
+
+        </div>
+        <!--gi-->
+        <div class="search_bar">
+        </div>
+        <!--sb-->
+      </div>
+      <div class="wrap fixed">
+        <div class="game_in my_page_bill">
+          <div class="bill_left">
+            <p>即時注單</p>
+          </div>
+          <div class="my_bill_mid">
+            <div class="m_box">
+              <p>投注總計</p>
+              <p class="blue">40000</p>
+            </div>
+            <div class="m_box">
+              <p>有效投注</p>
+              <p class="blue">40000</p>
+            </div>
+            <div class="m_box">
+              <p>結果</p>
+              <p class="blue">40000</p>
+            </div>
+          </div>
+          <div class="bill_right">
+
+          </div>
+        </div>
+        <div class="search_bar">
+          <p class="active">即時注單</p>
+        </div>
+      </div>
+      <!--單關格式-->
+      <div class="basic_bill">
+        <div class="b_name">
+          <p class="bf">足球-全場-獨贏</p>
+          <div class="row_line"></div>
+          <p>未開獎</p>
+          <div class="right_box">
+            <p class="time">2020-05-27&ensp;16:26:07</p>
+            <span class="arrow"></span>
+          </div>
+        </div>
+        <ul class="close bill_row">
+          <li>
+            <div class="b11 g_bg">投注選項</div>
+            <div class="b25 t_left">
+              <span class="blue">維羅納</span>
+              <span>@</span>
+              <span class="red">1.95</span>
+            </div>
+            <div class="b10 g_bg">賠率</div>
+            <div class="b22 t_left"><span class="red">0.96</span></div>
+            <div class="b10 g_bg">投注金額</div>
+            <div class="b22 t_left"><span>10000</span></div>
+          </li>
+        </ul>
+        <ul class="open bill_row">
+          <li class="title">
+            <i class="i1"></i>
+            <span>足球-全場-獨贏</span>
+            <div class="right_box">
+              <p>比賽時間</p>
+              <div class="row_line"></div>
+              <p>2020-0528&ensp;00:00</p>
+            </div>
+          </li>
+          <li class="big_line">
+            <div class="b11 g_bg">投注選項</div>
+            <div class="b25 t_left">
+              <span class="blue">維羅納</span>
+              <span>@</span>
+              <span class="red">1.95</span>
+            </div>
+            <div class="b10 g_bg">投注賽事</div>
+            <div class="b54 t_left ">
+              <em class="wrap big_li_half">
+                <p>義大利甲組聯賽
+                <p>
+                <p>拉素[主] <span class="red">2+50</span> <span class="blue">VS</span>維羅納 </p>
+              </em>
+
+            </div>
+          </li>
+          <li>
+            <div class="b11 g_bg">下注時間</div>
+            <div class="b25 t_left">
+              <span>2020-05-27&ensp;16:16:07</span>
+            </div>
+            <div class="b10 g_bg">比賽時間</div>
+            <div class="b22 t_left">
+              <span>2020-05-28&ensp;16:16:07</span>
+            </div>
+            <div class="b10 g_bg">帳務日期</div>
+            <div class="b22 t_left">
+              <span>2020-05-28</span>
+            </div>
+          </li>
+          <li>
+            <div class="b11 g_bg">單號</div>
+            <div class="b25 t_left">
+              <span class="d_blue">CPR09621621</span>
+            </div>
+            <div class="b10 g_bg">賠率</div>
+            <div class="b22 t_left">
+              <span>0.96</span>
+            </div>
+            <div class="b10 g_bg">可贏(參考)</div>
+            <div class="b22 t_left">
+              <span class="red">150</span>
+            </div>
+          </li>
+          <li class="footer_bg_blue white">
+            <div class="b11">投注金額</div>
+            <div class="b25 t_left">
+              <span>1000</span>
+            </div>
+            <div class="b10">有效下注</div>
+            <div class="b22 t_left">
+              <span>0.96</span>
+            </div>
+            <div class="b10">結果</div>
+            <div class="b22 t_left">
+              <span>未開獎</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--串關格式-->
+      <div class="basic_bill">
+        <div class="b_name">
+          <p class="bf">足球-全場-獨贏</p>
+          <div class="row_line"></div>
+          <p>未開獎</p>
+          <div class="right_box">
+            <p class="time">2020-05-27 16:26:07</p>
+            <span class="arrow"></span>
+          </div>
+        </div>
+        <ul class="close bill_row">
+          <li>
+            <div class="b11 g_bg">投注選項</div>
+            <div class="b25 t_left">
+              <span class="blue">3串一</span>
+            </div>
+            <div class="b10 g_bg">賠率</div>
+            <div class="b22 t_left"><span class="red">0.96</span></div>
+            <div class="b10 g_bg">投注金額</div>
+            <div class="b22 t_left"><span>10000</span></div>
+          </li>
+        </ul>
+        <ul class="open bill_row">
+          <div class="num_wrap">
+            <div class="b5">
+              <p>1</p>
+            </div>
+            <div class="li_wrap">
+              <li class="title">
+                <i class="i1"></i>
+                <span>足球-全場-獨贏</span>
+                <div class="right_box">
+                  <p>比賽時間</p>
+                  <div class="row_line"></div>
+                  <p>2020-0528 00:00</p>
+                </div>
+              </li>
+              <li class="big_line">
+                <div class="b9 g_bg">投注選項</div>
+                <div class="b23_6 t_left">
+                  <span class="blue">維羅納</span>
+                  <span>@</span>
+                  <span class="red">1.95</span>
+                </div>
+                <div class="b10_6 g_bg">投注賽事</div>
+                <div class="b54 t_left ">
+                  <em class="wrap big_li_half">
+                    <p>義大利甲組聯賽</p>
+                    <p>
+                    </p>
+                    <p>拉素[主] <span class="red">2+50</span> <span class="blue">VS</span>維羅納 </p>
+                  </em>
+
+                </div>
+              </li>
+            </div>
+          </div>
+          <div class="num_wrap">
+            <div class="b5">
+              <p>2</p>
+            </div>
+            <div class="li_wrap">
+              <li class="title">
+                <i class="i1"></i>
+                <span>足球-全場-獨贏</span>
+                <div class="right_box">
+                  <p>比賽時間</p>
+                  <div class="row_line"></div>
+                  <p>2020-0528 00:00</p>
+                </div>
+              </li>
+              <li class="big_line">
+                <div class="b9 g_bg">投注選項</div>
+                <div class="b23_6 t_left">
+                  <span class="blue">維羅納</span>
+                  <span>@</span>
+                  <span class="red">1.95</span>
+                </div>
+                <div class="b10_6 g_bg">投注賽事</div>
+                <div class="b54 t_left ">
+                  <em class="wrap big_li_half">
+                    <p>義大利甲組聯賽</p>
+                    <p>
+                    </p>
+                    <p>拉素[主] <span class="red">2+50</span> <span class="blue">VS</span>維羅納 </p>
+                  </em>
+
+                </div>
+              </li>
+            </div>
+          </div>
+          <div class="num_wrap">
+            <div class="b5">
+              <p>3</p>
+            </div>
+            <div class="li_wrap">
+              <li class="title">
+                <i class="i1"></i>
+                <span>足球-全場-獨贏</span>
+                <div class="right_box">
+                  <p>比賽時間</p>
+                  <div class="row_line"></div>
+                  <p>2020-0528 00:00</p>
+                </div>
+              </li>
+              <li class="big_line">
+                <div class="b9 g_bg">投注選項</div>
+                <div class="b23_6 t_left">
+                  <span class="blue">維羅納</span>
+                  <span>@</span>
+                  <span class="red">1.95</span>
+                </div>
+                <div class="b10_6 g_bg">投注賽事</div>
+                <div class="b54 t_left ">
+                  <em class="wrap big_li_half">
+                    <p>義大利甲組聯賽</p>
+                    <p>
+                    </p>
+                    <p>拉素[主] <span class="red">2+50</span> <span class="blue">VS</span>維羅納 </p>
+                  </em>
+
+                </div>
+              </li>
+            </div>
+          </div>
+          <li>
+            <div class="b11 g_bg">下注時間</div>
+            <div class="b25 t_left">
+              <span>2020-05-27 16:16:07</span>
+            </div>
+            <div class="b10 g_bg">比賽時間</div>
+            <div class="b22 t_left">
+              <span>2020-05-28 16:16:07</span>
+            </div>
+            <div class="b10 g_bg">帳務日期</div>
+            <div class="b22 t_left">
+              <span>2020-05-28</span>
+            </div>
+          </li>
+          <li>
+            <div class="b11 g_bg">單號</div>
+            <div class="b25 t_left">
+              <span class="d_blue">CPR09621621</span>
+            </div>
+            <div class="b10 g_bg">賠率</div>
+            <div class="b22 t_left">
+              <span>0.96</span>
+            </div>
+            <div class="b10 g_bg">可贏(參考)</div>
+            <div class="b22 t_left">
+              <span class="red">150</span>
+            </div>
+          </li>
+          <li class="footer_bg_blue white">
+            <div class="b11">投注金額</div>
+            <div class="b25 t_left">
+              <span>1000</span>
+            </div>
+            <div class="b10">有效下注</div>
+            <div class="b22 t_left">
+              <span>0.96</span>
+            </div>
+            <div class="b10">結果</div>
+            <div class="b22 t_left">
+              <span>未開獎</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    
+
+  </main>
+
+  <div class="f_wrap no_search">
+    <div class="f_bot">
+      <ul class="yet">
+        <li>
+          <i class="i2"></i>
+          <p class="red">存款</p>
+        </li>
+        <li>
+          <i class="i6"></i>
+          <p>幫助中心</p>
+        </li>
+        <li>
+          <i class="i7"></i>
+          <p>在線客服</p>
+        </li>
+        <li>
+          <i class="i8"></i>
+          <p>APP下載</p>
+        </li>
+      </ul>
+      <ul class="in active">
+        <li>
+          <i class="i2"></i>
+          <p class="red">存款</p>
+          <span class="nb">1</span>
+          <a href="./my_bill_save.html"></a>
+        </li>
+        <li>
+          <i class="i3"></i>
+          <p>轉點</p>
+          <span class="nb">2</span>
+          <a href="./my_bill_trans.html"></a>
+        </li>
+        <li>
+          <i class="i4"></i>
+          <p>交易紀錄</p>
+          <span class="nb active">6</span>
+          <a href="./my_bill_trans_record.html"></a>
+        </li>
+        <li>
+          <i class="i5"></i>
+          <p>投注紀錄</p>
+          <span class="nb active">3</span>
+          <a href="./my_bill_record.html"></a>
+        </li>
+        <li>
+          <i class="i6"></i>
+          <p>幫助中心</p>
+          <span class="nb ">5</span>
+          <a href="./my_help.html"></a>
+        </li>
+        <li>
+          <i class="i7"></i>
+          <p>在線客服</p>
+          <span class="nb">6</span>
+          <a href="./my_contact_us_sev.html"></a>
+        </li>
+        <li>
+          <i class="i8"></i>
+          <p>APP下載</p>
+          <span class="nb">7</span>
+          <a href="./my_download_app.html"></a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="bg_t bg_t2"></div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    console.log('record');
+    //注單展開
+    let bill_name = $('.basic_bill .b_name');
+    function bill_open(myself) {
+      if (myself.parent().hasClass('active') != true) {
+        myself.parent().addClass('active');
+      } else {
+        myself.parent().removeClass('active');
+      }
+    }
+    bill_name.click(function () {
+      let myself = $(this);
+      bill_open(myself);
+    })
+
+
+
+  })//ready
+
+</script>
+<script type="text/javascript" src="../../js/index.js"></script>
+</body>

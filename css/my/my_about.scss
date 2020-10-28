@@ -1,0 +1,166 @@
+.a_about_page,.a_link_page{
+    display: none;
+    &.active{
+        display: block;
+    }
+}
+.save_type{
+    &.about_size.about_size{
+        padding: 1.286em 1.429em;
+        .mb_box{
+            line-height: 7.857em;
+            height: 7.857em;
+            .ab_wrap{
+                text-align: center;
+                .box{
+                    display: inline-block;
+                    line-height: 6em ;
+                    vertical-align: middle;
+                    margin-right: 5em;
+                    text-align: center;
+                    span{
+                        line-height: 100%;
+                        vertical-align: top;
+                        display: inline-block;
+                        &.office_i{
+                            background: url(../image/my/about_office_icon.png)no-repeat;
+                            background-size: 400%;
+                            width: 5.714em;
+                            height: 3.571em;
+                            margin-top: -.5em;
+                            @for $i from 1 through 4{
+                                &.i#{$i}{
+                                    background-position-x: ($i - 1) * -5.714em;
+                                }
+                            }
+
+                        }
+                    }
+                    p{
+                        line-height: 1.2em;
+                        vertical-align: bottom;
+                        font-size: 1.1em;
+                        margin-top: -2.4em;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+
+        }
+    }
+    &.about_size_row2{
+        padding: 1.286em 1.429em;
+        .mb_box{
+            line-height: calc(16.857em - 2.2em);
+            height: 16.857em;
+            padding: 1.1em 0;
+            text-align: center;
+            &.free_h{
+                height: auto;
+            }
+            .row_top{
+                display: block;
+                vertical-align: top;
+                line-height: 100%;
+              
+            }
+            .row_bot{
+                display: block;
+                vertical-align: bottom;
+                line-height: 100%;
+                margin-top: 2.5em;
+            }
+            .row_top,.row_bot{
+              .box{
+                display: inline-block;
+                line-height: 6em ;
+                vertical-align: middle;
+                margin-right: 4.286em;
+                text-align: center;
+                span{
+                    line-height: 100%;
+                    vertical-align: top;
+                    display: inline-block;
+                    &.office_i{
+                        background: url(../image/my/about_friends_icon.png)no-repeat;
+                        background-size: 700%;
+                        width: 5.714em;
+                        height: 3.571em;
+                        margin-top: -.5em;
+                        @for $i from 1 through 7{
+                            &.i#{$i}{
+                                background-position-x: ($i - 1) * -5.714em;
+                            }
+                        }
+
+                    }
+                }
+                p{
+                    line-height: 1.2em;
+                    vertical-align: bottom;
+                    font-size: 1.1em;
+                    margin-top: -2.4em;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+              }
+            }
+        }
+    }
+}
+.link_row{
+    // overflow: hidden;
+    margin-right: -0.786em;
+    .box{
+        width: 25%;
+        float: left;
+        .box_wrap{
+            margin-top: 0.714em;
+            margin-right: 0.786em;
+            height: 100%;
+            overflow: hidden;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 6px 1px #d7dced;
+            position: relative;
+            cursor: pointer;
+            &:hover{
+                .link_title{
+                    p{
+                        text-decoration:underline;
+                    }
+                }
+            }
+            i{
+                display: block;
+                &.link_icon{
+                    background: url(../image/my/about_link_icon.png)no-repeat;
+                    background-size: 800%;
+                    width: 14.429em;
+                    height: 6.286em;
+                    @for $i from 1 through 8{
+                        &.i#{$i}{
+                            background-position-x: ($i - 1)* -14.429em;
+                        }
+                    }
+                }
+            }
+            .link_title{
+                line-height: 2.286em;
+                padding-left: 0.643em;
+                background: #f9f9f9;
+                p{
+                    font-size: 1.1em;
+                    color: #4d515d;
+                    width: 100%;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

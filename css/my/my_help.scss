@@ -1,0 +1,176 @@
+.q_save_page,
+.q_trans_page,
+.q_cash_page,
+.q_bet_page,
+.q_rules_page,
+.q_sup_page {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+.help_wrap {
+    color: #4d515d;
+    margin: 0.5em 0 0;
+    box-shadow: 0 0 6px 3px #ccd0ec;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    &.active {
+        .help_title {
+            background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
+            color: #fff;
+            .arrow {
+                background: url(../image/icon/arrow_w.png) no-repeat;
+                background-size: 100%;
+            }
+        }
+        .help_content {
+            display: block;
+        }
+    }
+}
+.help_title {
+    position: relative;
+    border-radius: 12px;
+    padding: 0 1em;
+    background: #fff;
+    line-height: 3em;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    span {
+        display: inline-block;
+        font-size: 1.1em;
+    }
+    .arrow {
+        display: inline-block;
+        background: url(../image/icon/arrow_d.png) no-repeat;
+        background-size: 100%;
+        width: 0.6em;
+        height: 0.8em;
+        vertical-align: middle;
+        transform: rotate(90deg);
+    }
+    .right_box {
+        float: right;
+    }
+}
+.help_content {
+    display: none;
+    position: relative;
+    border-radius: 12px;
+    margin: -1em 0 0;
+    padding: 2em 1em 1em;
+    background: #fff;
+    color: #4d515d;
+    line-height: 2em;
+    transition: all 0.2s ease-in-out;
+    .gray {
+        color: #b6bcca;
+    }
+}
+.h_6_5 {
+    height: 6.643em;
+}
+.rules_type {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        position: static;
+        transform: translateX(0%);
+        width: 100%;
+        height: 6.643rem;
+        margin-top: 1%;
+        padding: 0;
+        font-size: .79rem;
+    }
+    width: 78%;
+    position: fixed;
+    top: 9.927em;
+    right: 0;
+    // -ms-transform: translateX(-50%);
+    z-index: 5;
+    padding: 0 calc(0.8em + 8px) 0 0.8em;
+    .row_box {
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            padding: 0.714rem;
+        }
+        background: #fff;
+        padding: 0.714em 1em;
+        border-radius: 15px;
+        box-shadow: 0 0 5px 1px #d9dbef;
+    }
+    .row {
+        overflow: hidden;
+        margin-right: -0.5em;
+        &:last-child {
+            margin-top: 0.357em;
+        }
+        .box_wrap {
+            float: left;
+            width: calc(100% / 9);
+            .m_box {
+                background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
+                margin-right: 0.5em;
+                line-height: 2.286em;
+                border: 1px solid #b78960;
+                border-radius: 5px;
+                text-align: center;
+                cursor: pointer;
+                &:hover,
+                &.active {
+                    background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
+                    border-color: #444f8b;
+                }
+                p {
+                    font-size: 1.1em;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.rules_type_coby {
+    position: relative;
+    margin-top: 0.714em;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        &.none {
+            display: none;
+        }
+    }
+}
+
+.rules_ul {
+    margin: 0.5em 0 0;
+    overflow: hidden;
+    border: 1px solid #444f8b;
+    border-radius: 15px;
+    span {
+        display: inline-block;
+        &.red {
+            color: #ff0000;
+        }
+    }
+    .title {
+        background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
+        line-height: 2.214em;
+        padding: 0 1em;
+        border-top: none;
+        p {
+            color: #fff;
+        }
+    }
+    li {
+        padding: 0.5em 1em;
+        background: #ededed;
+        border-top: 1px solid #e0e1e3;
+        &:nth-child(even) {
+            background: #fff;
+        }
+        p {
+            font-size: 1.1em;
+            color: #4d515d;
+            line-height: 2;
+        }
+    }
+}

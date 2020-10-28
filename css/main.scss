@@ -1,0 +1,2283 @@
+@import "../css/reset.scss";
+//註冊&登入彈窗
+@import "../css/w_sign_in&up.scss";
+//下注彈窗
+@import "../css/window.scss";
+@import "../css/game_tools.scss";
+@import "../css/language_style.scss";
+//heard_box
+@import "../css/head_box.scss";
+//球類內頁篇幅
+@import "../css/game_in.scss";
+//球類表格&狀態書籤
+@import "../css/card&book.scss";
+
+//直播頁面_
+@import "../css/live_page.scss";
+
+@import "../css/my/my_page.scss";
+@import "../css/my/my_trans_record.scss";
+@import "../css/my/my_help.scss";
+@import "../css/my/my_message.scss";
+//灰高表格_
+@import "../css/my/basic_bill.scss";
+//投注記錄表格_
+@import "../css/my/bill_box.scss";
+//個人基本資料格式_
+@import "../css/my/my_data_type.scss";
+
+//聯絡我們_
+@import "../css/my/contact_us.scss";
+//關於我們
+@import "../css/my/my_about.scss";
+
+//線上客服
+@import "../css/my/online_service.scss";
+//加入我們
+@import "../css/my/my_join_us.scss";
+//下載_app download_app
+@import "../css/my/my_download.scss";
+
+//優惠活動
+@import "../css/event/event.scss";
+//登入登出切換用
+@import "../css/test_sign.scss";
+
+//new_bet_table_0729
+@import "../css/bet_table.scss";
+
+//<p>選擇球種</p>&選擇聯盟window
+@import "../css/search_choice.scss";
+@keyframes marquee {
+  0% {
+    left: 100%;
+    transform: translateX(-0%);
+  }
+
+  100% {
+    left: 0%;
+    transform: translateX(-100%);
+  }
+}
+a {
+  position: absolute;
+  width: 100%;
+  height: 53px;
+  top: 0;
+  color: #000;
+  &:hover {
+    color: #fff;
+  }
+  span {
+    font-size: 16px;
+    line-height: 56px;
+    padding-left: 45px;
+  }
+}
+html {
+}
+body {
+  overflow-x: hidden;
+  background: #e5e8fb;
+  word-wrap: break-word;
+}
+.test_box {
+  position: fixed;
+  top: 55px;
+  left: 30px;
+  display: inline-block;
+  z-index: 1000;
+  width: 95px;
+  height: 50px;
+  .en_cn {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    line-height: 1em;
+    z-index: 10;
+    text-align: center;
+  }
+  .test {
+    position: absolute;
+    top: 8%;
+    left: 2%;
+    line-height: 1.5em;
+    z-index: 10;
+    text-align: center;
+    font-size: 14px;
+    width: 110px;
+  }
+  .test2 {
+    position: absolute;
+    top: 33%;
+    left: 2%;
+    line-height: 1em;
+    z-index: 10;
+    text-align: center;
+    font-size: 14px;
+    li {
+      margin-bottom: 1em;
+    }
+  }
+  .all_test {
+    position: absolute;
+    top: 62%;
+    left: 2%;
+    line-height: 1em;
+    z-index: 10;
+    text-align: center;
+    font-size: 14px;
+  }
+  .en_cn,
+  .test,
+  .test2,
+  .all_test {
+    li {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      &:hover,
+      &.active {
+        color: #fff;
+        background: #000;
+      }
+    }
+  }
+}
+.container {
+  //共用vip_0708
+  .vip {
+    display: inline-block;
+    vertical-align: top;
+    // margin: 0 0 0 0.5em;
+    line-height: 1.1em;
+    padding: 0.1em 0.25em 0em;
+    background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
+    border-radius: 4px;
+    width: 3.5em;
+    padding: 2px 0;
+    text-align: center;
+    i {
+      background: url(../image/icon/vip.png) no-repeat;
+      background-size: 100%;
+      display: inline-block;
+      width: 1.6em;
+      height: 0.8em;
+      vertical-align: text-bottom;
+    }
+    p {
+      display: inline-block;
+      font-family: "微軟正黑體";
+      font-weight: bold;
+      color: #fff;
+      vertical-align: text-top;
+      line-height: 100%;
+      font-size: 0.8em;
+    }
+  }
+  //0624字母大
+  //  text-transform:capitalize;
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  margin: 7.5em 0 0;
+  min-width: 1600px;
+  width: 100%;
+  height: calc(100% - 7.5em);
+  max-height: 835px;
+  position: fixed;
+  z-index: 1;
+  //0623
+  overflow: hidden;
+  font-size: 14px;
+  &::-webkit-scrollbar {
+    width: 5px;
+    position: absolute;
+    left: 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #7993ab;
+    // background: #e8ebfe;
+    border-radius: 10px;
+  }
+  $right_list_width: 7em;
+  .search_group {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      right: 4px;
+    }
+    position: fixed;
+    top: 120px;
+    z-index: 100;
+    // right: -260px;
+    right: -4px;
+    transform: translateX(74%);
+    border-radius: 29px 0 0 29px;
+    box-shadow: 0 0 5px 1px #b6bcdd;
+    background: #fff;
+    transition: all ease-in-out 0.3s;
+    &.active {
+      transform: translateX(0%);
+      .s_box {
+        color: #fff;
+        background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+        .i1 {
+          background-position: 0 -2.286em;
+        }
+      }
+      .row {
+        background: #eaedf4;
+      }
+    }
+    .row {
+      border-radius: 29px 0 0 29px;
+      line-height: 100%;
+      background: #eaedf4;
+    }
+    .ul_wrap {
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        right: -12px;
+      }
+      position: absolute;
+      top: 100%;
+      right: 0;
+      max-height: 453px;
+      line-height: 2em;
+      overflow-y: scroll;
+      border-radius: 0 0 0 30px;
+      &::-webkit-scrollbar {
+        width: 5px;
+        position: absolute;
+        left: 0;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #fff;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #7993ab;
+        // background: #e8ebfe;
+        border-radius: 10px;
+      }
+      .gt {
+        width: 248px;
+        color: #4d515d;
+        .title {
+          padding: 1em;
+          position: relative;
+          background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%);
+          cursor: pointer;
+          &:hover {
+            background: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%);
+          }
+          .arrow {
+            background: url(../image/icon/arrow_d.png) no-repeat;
+            background-size: 100%;
+            width: 0.5em;
+            height: 0.8em;
+            margin: 0 0 0 0.125em;
+            vertical-align: middle;
+            position: absolute;
+            transform: translate(0%, -50%);
+            right: 1em;
+            top: 50%;
+            cursor: pointer;
+            transition: all ease-in-out 0.2s;
+          }
+        }
+        li {
+          padding: 1em;
+          line-height: 2em;
+          background: #fff;
+          border-bottom: 1px solid #c8cedf;
+          position: relative;
+          transition: all ease-in-out 0.2s;
+          cursor: pointer;
+          &:hover {
+            text-decoration-line: underline;
+          }
+          span {
+            width: 1.6em;
+            height: 1.6em;
+            background: url(../image/icon/s_game_icon.png) no-repeat;
+            background-size: 300%;
+            vertical-align: middle;
+            margin: 0 0.5em 0 0;
+            @for $i from 1 through 3 {
+              &.i#{$i} {
+                background-position: (($i - 1) * -1.6em) 0;
+              }
+            }
+          }
+
+          p {
+            display: inline-block;
+            position: absolute;
+            right: 1em;
+            transform: translateY(-50%);
+            top: 50%;
+          }
+        }
+        p,
+        span {
+          display: inline-block;
+        }
+        &.active {
+          .title {
+            background: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%);
+            .arrow {
+              transform: translate(0%, -50%) rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+    .s_box {
+      display: inline-block;
+      font-size: 0.9em;
+      width: $right_list_width;
+      border-radius: 29px 0 0 29px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      line-height: 100%;
+      text-align: center;
+      padding: calc(0.8em + 10px) 0;
+      vertical-align: middle;
+
+      i {
+        width: 2.286em;
+        height: 2.286em;
+        background: url(../image/icon/f_list_i.png) no-repeat;
+        background-size: 800%;
+        display: inline-block;
+        line-height: 100%;
+        margin: 0 0 0.25em;
+        @for $i from 1 through 8 {
+          &.i#{$i} {
+            background-position: (($i - 1) * -2.286em) 0;
+          }
+        }
+      }
+      &:hover {
+        color: #fff;
+        background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+        .i1 {
+          background-position: 0 -2.286em;
+        }
+      }
+    }
+    .s_wrap {
+      display: inline-block;
+      line-height: 100%;
+      vertical-align: middle;
+      position: relative;
+
+      input {
+        box-shadow: inset 0 0 2px 2px #c6cae0;
+        border: none;
+        padding: 0.3em 0.25em 0.25em 1em;
+        border-radius: 15px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 2em;
+        font-size: 1em;
+        &::placeholder {
+          color: #8f94a4;
+          font-size: 1.071em;
+        }
+        &:focus {
+          box-shadow: inset 0 0 2px 2px #3449b9;
+        }
+      }
+      button {
+        width: auto;
+        height: auto;
+        padding: 0.1em 0.9em 0em;
+        margin: 0 1em 0 0.5em;
+        background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+        color: #fff;
+        border-radius: 6px;
+        line-height: 2em;
+        vertical-align: middle;
+        &:hover {
+          background: linear-gradient(to bottom, #2f45b7 0%, #8f9cdc 100%);
+        }
+        p {
+          font-size: 1.214em;
+        }
+      }
+    }
+  }
+  .f_wrap {
+    position: fixed;
+    right: 0;
+    top: 230px;
+    z-index: 10;
+    color: #4d515d;
+    //0624
+    font-size: 0.9em;
+    &.no_search {
+      top: 120px;
+    }
+    i {
+      width: 2.286em;
+      height: 2.286em;
+      background: url(../image/icon/f_list_i.png) no-repeat;
+      background-size: 800%;
+      display: inline-block;
+      line-height: 100%;
+      @for $i from 1 through 8 {
+        &.i#{$i} {
+          background-position: (($i - 1) * -2.286em) 0;
+        }
+      }
+    }
+    .f_top {
+      width: 100%;
+      text-align: center;
+      line-height: 50px;
+      background: #fff;
+      cursor: pointer;
+      position: relative;
+      border-radius: 30px 0 0 30px;
+      box-shadow: 0 0 5px 1px #b6bcdd;
+      overflow: hidden;
+    }
+
+    .f_bot {
+      width: 100%;
+      text-align: center;
+      line-height: 50px;
+      background: #fff;
+      cursor: pointer;
+      position: relative;
+      border-radius: 30px 0 0 30px;
+      box-shadow: 0 0 5px 1px #b6bcdd;
+      overflow: hidden;
+    }
+    .f_top {
+      margin: 0 0 2em;
+      .s_box {
+        line-height: 100%;
+        text-align: center;
+        //0623
+        // padding: 1.2em .8em 1.2em .8em;
+
+        i {
+          margin: 0 0 4px;
+        }
+        &:hover {
+          color: #fff;
+
+          .i1 {
+            background-position: 0 -1.5em;
+          }
+        }
+      }
+    }
+    .f_bot {
+      ul {
+        background: #eaedf4;
+        li {
+          line-height: 100%;
+          text-align: center;
+          //0623
+          // padding: 1.2em .8em 1.2em .8em;
+          // padding: .8em;
+          padding: 1.5em 0.8em;
+          position: relative;
+          width: $right_list_width;
+          i {
+            margin: 0 0 4px;
+          }
+          p {
+            &.red {
+              color: #c70303;
+            }
+          }
+          span {
+            &.nb {
+              display: inline-block;
+              position: absolute;
+              background: #df0506;
+              color: #fff;
+              padding: 0.2em 0.25em 0em;
+              left: 3px;
+              top: 12px;
+              border-radius: 4px;
+              width: 18px;
+              display: none;
+              &.active {
+                display: block;
+              }
+            }
+          }
+          &:hover:hover,
+          &:active,
+          &.active {
+            color: #fff;
+            background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+            i {
+              @for $i from 2 through 8 {
+                &.i#{$i} {
+                  background-position: (($i - 1) * -2.286em) -2.286em;
+                }
+              }
+            }
+            p {
+              color: #fff;
+            }
+          }
+        }
+        &.yet,
+        &.in {
+          display: none;
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  main {
+    display: block;
+    width: 1100px;
+    // margin: 0 auto;
+    // position: relative;
+    // position: fixed;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 797px;
+    &.live_mode {
+      width: 1350px;
+      .right {
+        width: 65.5%;
+        left: 12.3%;
+      }
+      .left {
+        width: 14.3%;
+        .index {
+          li {
+            padding: 0 0 0 0.8em;
+            i {
+              margin: 0 0.7em 0 0;
+            }
+            .num {
+              right: 0.5em;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        position: static;
+      }
+      // width: 66%;
+      width: 83.2%;
+      float: left;
+      padding: 0.8em 0.8em 8em 0.8em;
+      // position: fixed;
+      position: absolute;
+      top: 0;
+      left: 16.8%;
+      height: 825px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        width: 0.5em;
+        position: absolute;
+        left: 0;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+      //靠程式改當前寬度
+      .wrap {
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          &.none {
+            display: none;
+          }
+        }
+        &.fixed.fixed.fixed.fixed {
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            position: static;
+            width: 100%;
+          }
+          position: fixed;
+          @media all and (min-width:0\0) and (min-resolution:.001dpcm)
+          {
+              top: 116px;
+              // left: 24%;
+              width: 846px;
+          }
+          top: 0.8em;
+          width: 968px;
+          z-index: 5;
+          // display: none;
+          width: calc((65.5% - 1.6em) - 6px);
+          @media screen and (min--moz-device-pixel-ratio:0){
+            width: calc((65.5% - 1.6em) - 18px);
+          }
+        
+          box-shadow: 0 0 6px 1px #bcc2dc;
+          border-radius: 5px;
+
+          .search_bar {
+            overflow: visible;
+          }
+          .bill_record_d_card {
+            position: absolute;
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+              position: static;
+            }
+          }
+          &.big_size {
+            width: calc((83.2% - 1.6em) - 6px);
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+              width: 100%;
+            }
+          }
+          &.active {
+            display: block;
+          }
+        }
+      }
+      .search_bar {
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          &.none {
+            display: none;
+          }
+        }
+        width: 100%;
+        line-height: 3.214em;
+        height: 3.214em;
+        background-color: #c7c7c7;
+        background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+        overflow: hidden;
+        border-radius: 5px;
+        padding: 0 1.357em 0 1.357em;
+        position: relative;
+        a {
+          top: -24px;
+        }
+        z-index: 2;
+        .blue {
+          color: #556de7;
+        }
+        &.fixed {
+          position: fixed;
+          top: 0.7em;
+          width: calc((65.5% - 1.6em) - 4px);
+          box-shadow: 0 0 6px 1px #bcc2dc;
+          &.big_size {
+            width: calc((83.2% - 1.6em) - 4px);
+          }
+
+          z-index: 5;
+          &.active {
+            display: block;
+          }
+        }
+        //0701
+        .back_wrap {
+          display: inline-block;
+          line-height: 1.1em;
+          padding: 2px 0.5em;
+          background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+          color: #fff;
+          border-radius: 6px;
+          margin: 0px 1em 0px 0px;
+          vertical-align: middle;
+          position: relative;
+          z-index: 1;
+          &:hover {
+            background: linear-gradient(to bottom, #2f45b7 0%, #8f9cdc 100%);
+          }
+          .arrow_w {
+            background: url(../image/icon/arrow_w.png) no-repeat;
+            background-size: 100%;
+            width: 0.6em;
+            height: 0.8em;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+            margin: 0 0.3em 0 0;
+            cursor: pointer;
+          }
+          p {
+            color: #fff;
+            &:hover,
+            &.active {
+              color: #fff;
+              &:before {
+                display: none;
+              }
+            }
+          }
+        }
+        p {
+          display: inline-block;
+          font-size: 1.071em;
+          color: #4d515d;
+          line-height: 1;
+          vertical-align: middle;
+          cursor: pointer;
+          padding: 2px 0 0;
+          position: relative;
+          &.active,
+          &:hover {
+            color: #6272cc;
+            &:before {
+              content: "";
+              position: absolute;
+              // bottom: -.8em;
+              bottom: -14px;
+              left: 0;
+              width: 100%;
+              height: 3px;
+              border-radius: 170px;
+              background: #6272cc;
+            }
+          }
+          &.set {
+            margin: 0 0 0 0.5em;
+          }
+        }
+        span {
+          display: inline-block;
+          font-size: 1.071em;
+          color: #4d515d;
+          line-height: 1;
+          vertical-align: middle;
+          padding: 2px 0 0;
+          position: relative;
+        }
+        .arrow {
+          background: url(../image/icon/arrow_g.png) no-repeat;
+          background-size: 100%;
+          width: 0.4em;
+          height: 0.7em;
+          display: inline-block;
+          line-height: 1;
+          vertical-align: middle;
+          transform: rotate(90deg);
+          margin: 0 0 0 0.5em;
+          cursor: pointer;
+        }
+        .day_wrap {
+          float: left;
+          width: 10.5%;
+          text-align: center;
+          .l_btn {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6.5px 6.5px 6.5px 0;
+            border-color: transparent #cda37d transparent transparent;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+          }
+          .r_btn {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6.5px 0 6.5px 6.5px;
+            border-color: transparent transparent transparent #cda37d;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+          }
+          .l_btn,
+          .r_btn {
+            cursor: pointer;
+          }
+          span {
+            display: inline-block;
+            width: 60%;
+            background: #6272cc;
+            line-height: 1.1;
+            font-size: 1.071em;
+            padding: 5px 0 3px 0;
+            color: #fff;
+            border-radius: 4px;
+            vertical-align: middle;
+            margin: 0 0.25em 0;
+          }
+        }
+        .tag_wrap {
+          display: inline-block;
+          margin: 0 0 0 0.5em;
+          .tag {
+            margin: 0 4px 0 0;
+            border: 1px solid #3145b2;
+            line-height: 1.1;
+            vertical-align: middle;
+            display: inline-block;
+            padding: 4px 0.315em 4px 0.315em;
+            color: #3145b2;
+            border-radius: 4px;
+            font-size: 14px;
+            span {
+              font-size: 1.071em;
+              line-height: 1;
+              vertical-align: middle;
+              color: #3145b2;
+            }
+            cursor: pointer;
+            &:last-child {
+              margin: 0;
+            }
+            &:hover,
+            &.active {
+              background: linear-gradient(to bottom, #354ab9 0%, #8b98da 100%);
+              span {
+                color: #fff;
+              }
+            }
+          }
+        }
+        .right_box {
+          float: right;
+          height: 100%;
+        }
+        .edit {
+          display: none;
+          &.active {
+            display: block;
+          }
+          .do,
+          .delete,
+          .cancel {
+            display: inline-block;
+            border: 1px solid #3145b2;
+            line-height: 100%;
+            padding: 0.2em 0.5em 0.15em;
+            border-radius: 4px;
+            color: #3145b2;
+            cursor: pointer;
+            span {
+              font-size: 1.1em;
+              color: #3145b2;
+            }
+            &:hover {
+              background: #3145b2;
+              span {
+                color: #fff;
+              }
+            }
+          }
+          .delete {
+            margin-right: 0.2em;
+          }
+          .doing {
+            display: none;
+          }
+          &.editing {
+            .do {
+              display: none;
+            }
+            .doing {
+              display: inline-block;
+            }
+          }
+        }
+        .line {
+          background: #bcbcbc;
+          width: 1px;
+          height: 60%;
+          display: inline-block;
+          line-height: 1;
+          vertical-align: middle;
+          margin: 0 0.5em;
+        }
+        .row_line {
+          background: #3145b2;
+          width: 0.5em;
+          height: 0.125em;
+          display: inline-block;
+          line-height: 1;
+          vertical-align: middle;
+          margin: 0 0.25em;
+        }
+        span {
+          &.date_icon {
+            width: 1.3em;
+            height: 1.3em;
+            vertical-align: middle;
+            background: url(../image/my/date_icon.png) no-repeat;
+            background-size: 100%;
+            display: inline-block;
+            cursor: pointer;
+            margin-right: 4px;
+          }
+          &.tri {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0.4em 0.3em 0 0.3em;
+            border-color: #9496af transparent transparent transparent;
+            display: inline-block;
+            vertical-align: middle;
+            margin: -0.125em 0 0 0.25em;
+          }
+        }
+        .day_box {
+          display: inline-block;
+          vertical-align: middle;
+          width: auto;
+          height: 1.786em;
+          line-height: 1.786em;
+          border: 1px solid #3145b2;
+          border-radius: 4px;
+          background: #fff;
+          padding: 0 0.5em;
+          position: relative;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          &:active,
+          &:hover,
+          &.active {
+            .day_drow {
+              display: block;
+            }
+            span {
+              &.tri {
+                transform: rotate(180deg);
+                transition: all 0.2s ease-in-out;
+              }
+            }
+          }
+          .day_drow {
+            display: none;
+            line-height: 1.786em;
+            width: calc(100% + 2px);
+            border: 1px solid #3145b2;
+            border-width: 0 1px 1px;
+            position: absolute;
+            top: 1.69em;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 0 0 4px 4px;
+            background: #fff;
+
+            z-index: 1;
+            span {
+              width: 100%;
+              padding: 0 0.5em;
+              line-height: 1.786em;
+              &:hover {
+                background: #3145b2;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .teach {
+        background: transparent;
+        padding: 0;
+        margin-top: 0.8rem;
+        p {
+          width: 10%;
+          padding: .5rem 0;
+          text-align: center;
+          color: #fff;
+          background: linear-gradient(to bottom, #dfb995, #b6885f);
+          border: 1px solid #b78960;
+          border-radius: 5px;
+          &.active,
+          &:hover {
+            color: #fff;
+            background: linear-gradient(to bottom, #444f8b, #6a75b2);
+            border: 1px solid #444f8b;
+            &:before {
+              content: "";
+              height: 0;
+              // position: absolute;
+              // bottom: -14px;
+              // left: 0;
+              // width: 100%;
+              // height: 3px;
+              // border-radius: 170px;
+              background: #6272cc;
+            }
+          }
+        }
+      }
+      .search_box {
+        position: relative;
+        //0709
+        // .balls_choice{
+        //   display: none;
+        //   &.active{
+        //     display: block;
+        //   }
+        //   width: 100%;
+        //   height: auto;
+        //   background: linear-gradient(to bottom, #fafbff 0%,#fafbff 20%,#fafbff 80%, #e2e5f5 100%);
+        //   border-radius: 0 0 8px 8px;
+        //   position: absolute;
+        //   left: 0;
+        //   bottom: 0;
+        //   transform: translateY(90%);
+        //   z-index: 1;
+        //   padding: 1em;
+        //   color: #4d515d;
+        //   overflow: hidden;
+        //   .row{
+        //     line-height: 2em;
+        //     height: 2em;
+        //     width: 100%;
+        //     float: left;
+        //     p{
+        //       display: inline-block;
+        //       vertical-align: middle;
+        //       line-height: 1;
+        //     }
+        //     span{
+        //       display: inline-block;
+        //       vertical-align: text-bottom;
+        //       &.check{
+        //         cursor: pointer;
+        //         width: 1em;
+        //         height: 1em;
+        //         border: 1px solid #b2afcf;
+        //         border-radius: 4px;
+        //         background: linear-gradient(to bottom,#cbd0e9 0%,#ffffff 100%);
+        //         position: relative;
+        //         &.active{
+        //           border: 1px solid #4259d7;
+        //           background: linear-gradient(to bottom,#2f45b7 0%,#8694d8 100%);
+        //           &:before{
+        //             content: '';
+        //             position: absolute;
+        //             top: 35%;
+        //             left: 50%;
+        //             width: 50%;
+        //             height: 80%;
+        //             transform: translate(-50%, -50%) rotate(45deg);
+        //             background: none;
+        //             border-width: 0 2px 2px 0;
+        //             border-style: solid;
+        //             border-color: #fff;
+        //           }
+        //         }
+        //       }
+        //     }
+        //     .b12_5{
+        //       width: 12.5%;
+        //       float: left;
+        //       white-space: nowrap;
+        //     }
+        //   }
+
+        // }
+      }
+    }
+
+    .left {
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        position: static;
+      }
+      width: 16.8%;
+      float: left;
+      top: 0;
+      left: -25px;
+      // position: fixed;
+      position: absolute;
+      height: 825px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      box-shadow: 0 0 5px 3px #d3d8ea;
+      border-radius: 0 0 10px 10px;
+      background: #f6f9ff;
+      padding: 0 0 8em;
+
+      &.my_page {
+        width: 20%;
+      }
+      &::-webkit-scrollbar {
+        width: 0.5em;
+        position: absolute;
+        left: 0;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        // background: #e8ebfe;
+        border-radius: 10px;
+      }
+      ul {
+        &.index {
+          &.active {
+            display: block;
+          }
+          display: none;
+          li {
+            line-height: 3.8em;
+            width: 100%;
+            padding: 0 0 0 1em;
+            cursor: pointer;
+            position: relative;
+            i,
+            p {
+              display: inline-block;
+            }
+            i {
+              width: 1.5em;
+              height: 1.5em;
+              background: url(../image/icon/list.png) no-repeat;
+              background-size: 1800%;
+              vertical-align: middle;
+              margin: 0 0.5em 0 0;
+              @for $i from 1 through 18 {
+                &.i#{$i} {
+                  background-position: (-1.5em * ($i - 1)) 0;
+                }
+              }
+            }
+            p {
+              font-size: 1.15em;
+              line-height: 100%;
+              width: 50%;
+              vertical-align: middle;
+              padding-top: 4px;
+              &.num {
+                position: absolute;
+                right: 0.9em;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #6272cc;
+                padding: 3px 6px 1px;
+                border-radius: 6px;
+                color: #fff;
+                font-size: 1em;
+                width: 2.5em;
+                text-align: center;
+              }
+            }
+            &:hover,
+            &:active,
+            &.active {
+              background-color: #1b2c86;
+              background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
+              span {
+                color: #fff;
+                &.num {
+                  background: #fff;
+                  color: #3549b7;
+                }
+              }
+              i {
+                @for $i from 1 through 18 {
+                  &.i#{$i} {
+                    background-position: (-1.5em * ($i - 1)) -1.5em;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .right_2 {
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        // position: static;
+      }
+      width: 22.2%;
+      height: auto;
+      float: left;
+      overflow-y: auto;
+      overflow-x: hidden;
+      // position: fixed;
+      position: absolute;
+      min-height: 909px;
+      top: 2px;
+      right: -10px;
+      padding: 0 0 8em;
+      display: none;
+      &.active {
+        display: block;
+      }
+      &::-webkit-scrollbar {
+        width: 0.5em;
+        position: absolute;
+        left: 0;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        // background: #e8ebfe;
+        border-radius: 10px;
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    height: 69px;
+    line-height: 69px;
+    background: #252525;
+    text-align: center;
+    .fw {
+      display: inline-block;
+      width: 500px;
+      color: #858585;
+      vertical-align: middle;
+      ul {
+        width: 100%;
+        overflow: hidden;
+        line-height: 23px;
+        li {
+          float: left;
+          width: 20%;
+          border-right: 1px solid #363636;
+          &:last-child {
+            border-right: 1px solid transparent;
+          }
+          p {
+            cursor: pointer;
+            display: inline-block;
+          }
+        }
+      }
+      .cl {
+        line-height: 100%;
+        margin: 6px 0 0;
+      }
+    }
+  }
+}
+
+.bg_t {
+  background: url(../image/bg.jpg) no-repeat;
+  //  background: url(../image/bg2.jpg) no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  background-position: top center;
+  &.bg_t2 {
+    &:before {
+      position: absolute;
+      content: "";
+      width: 772px;
+      height: 652px;
+      background: url(../image/bg_t.png) no-repeat;
+      background-size: 100%;
+      transform: translate(-50%, -50%);
+      top: 52%;
+      left: 56%;
+    }
+  }
+  overflow: hidden;
+  // width: 1920px;
+  min-width: 1600px;
+  width: 100%;
+  height: 1200px;
+  position: fixed;
+  top: 0px;
+  // left: 50%;
+  // transform: translateX(-50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+  //新增
+
+//卡片外觀
+.rb_card {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 0 4px 2px #bac0db;
+  margin-top: 10px;
+  //上段字
+  p {
+    display: block;
+    font-size: 15px;
+    width: 100%;
+    line-height: 30px;
+    //上段字前小圖
+    span {
+      display: block;
+      height: 15px;
+      width: 15px;
+      overflow: hidden;
+      position: relative;
+      float: left;
+      margin: 6px 5px 0px 10px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        background: url('../image/icon/list.png') no-repeat;
+        background-size: 100%;
+      }
+      //足球小圖
+      &.soccer {
+        &::before {
+          top: -18px;
+          left: -34px;
+        }
+      }
+      &.soccer_un {
+        &::before {
+          top: -34px;
+          left: -34px;
+        }
+      }
+      //籃球小圖
+      &.basketball {
+        &::before {
+          top: -18px;
+          left: -67px;
+        }
+      }
+      &.basketball_un {
+        &::before {
+          top: -34px;
+          left: -67px;
+        }
+      }
+      //棒球小圖
+      &.baseball {
+        &::before {
+          top: -18px;
+          left: -50px;
+        }
+      }
+      &.baseball_un {
+        &::before {
+          top: -34px;
+          left: -50px;
+        }
+      }
+      //賽馬小圖
+      &.racing_horse {
+        &::before {
+          top: -18px;
+          left: -83px;
+        }
+      }
+      &.racing_horse_un {
+        &::before {
+          top: -34px;
+          left: -83px;
+        }
+      }
+      //電競小圖
+      &.esport {
+        &::before {
+          top: -17px;
+          left: -100px;
+        }
+      }
+      &.esport_un {
+        &::before {
+          top: -34px;
+          left: -100px;
+        }
+      }
+      //股票指數小圖
+      &.stock {
+        &::before {
+          top: -17px;
+          left: -117px;
+        }
+      }
+      &.stock_un {
+        &::before {
+          top: -34px;
+          left: -117px;
+        }
+      }
+      //彩球小圖
+      &.lottery {
+        &::before {
+          top: -17px;
+          left: -134px;
+        }
+      }
+      &.lottery_un {
+        &::before {
+          top: -34px;
+          left: -134px;
+        }
+      }
+      //冰球小圖
+      &.iceball {
+        &::before {
+          top: -17px;
+          left: -150px;
+        }
+      }
+      &.iceball_un {
+        &::before {
+          top: -34px;
+          left: -150px;
+        }
+      }
+      //網球小圖
+      &.tennis {
+        &::before {
+          top: -17px;
+          left: -167px;
+        }
+      }
+      &.tennis_un {
+        &::before {
+          top: -34px;
+          left: -167px;
+        }
+      }
+      //斯諾克小圖
+      &.snooker {
+        &::before {
+          top: -17px;
+          left: -184px;
+        }
+      }
+      &.snooker_un {
+        &::before {
+          top: -34px;
+          left: -184px;
+        }
+      }
+      //排球小圖
+      &.v_ball {
+        &::before {
+          top: -17px;
+          left: -200px;
+        }
+      }
+      &.v_ball_un {
+        &::before {
+          top: -34px;
+          left: -200px;
+        }
+      }
+      //羽毛球小圖
+      &.badminton {
+        &::before {
+          top: -17px;
+          left: -234px;
+        }
+      }
+      &.badminton_un {
+        &::before {
+          top: -34px;
+          left: -234px;
+        }
+      }
+      //美式足球小圖
+      &.football {
+        &::before {
+          top: -17px;
+          left: -250px;
+        }
+      }
+      &.football_un {
+        &::before {
+          top: -34px;
+          left: -250px;
+        }
+      }
+      //沙灘足球小圖
+      &.bso {
+        &::before {
+          top: -17px;
+          left: -251px;
+        }
+      }
+      &.bso_un {
+        &::before {
+          top: -34px;
+          left: -251px;
+        }
+      }
+      //美式足球小圖
+      &.football {
+        &::before {
+          top: -17px;
+          left: -267px;
+        }
+      }
+      &.football_un {
+        &::before {
+          top: -34px;
+          left: -267px;
+        }
+      }
+      //乒乓球小圖
+      &.pp {
+        &::before {
+          top: -17px;
+          left: -284px;
+        }
+      }
+      &.pp_un {
+        &::before {
+          top: -34px;
+          left: -284px;
+        }
+      }
+    }
+  }
+  table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    tr {
+      text-align: center;
+      th {
+        color: #4d515d;
+        font-size: 16px;
+        font-weight: normal;
+        border-style: solid;
+        border-width: 2px 2px 0px 0px;
+        border-color: #e0e1e3;
+        padding: 5px 0px;
+        &:last-child {
+          border-right: none;
+        }
+        //字靠左
+        &.tleft {
+          text-align: left;
+          padding-left: 10px;
+        }
+      }
+      td {
+        font-weight: bold;
+        font-size: 16px;
+        border: 2px solid #e0e1e3;
+        border-bottom-width: 0px;
+        padding: 5px 0px;
+        vertical-align: middle;
+        word-break: break-all;
+        &:last-child {
+          border-right: none;
+        }
+        //小電視+愛心圖
+        a {
+          display: inline-block;
+          position: relative;
+          width: 25px;
+          height: 25px;
+          margin: 4px 5px 0px 0px;
+          overflow: hidden;
+          &.tbimg1 {
+            background: url('../image/icon/live_icon.png') no-repeat;
+            background-size: 100%;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 60px;
+              background: linear-gradient(to right,transparent,#ffffff,transparent);
+              transform: rotate(135deg);
+              left: -25px;
+              top: -10px;
+              transition: 0.5s all;
+            }
+            &:hover:before {
+              left: 50px;
+            }
+          }
+          &.tbimg2 {
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 50px;
+              height: 25px;
+              background: url('../image/icon/heart.png') no-repeat;
+              background-size: 100%;
+            }
+            &:hover:before {
+              left: -25px;
+            }
+          }
+          &.tbimg3 {
+            width: 40px;
+            line-height: 25px;
+            color: #4d515d;
+          }
+          &:last-child {
+            margin: 0px;
+          }
+        }
+        //內頁td內按鈕
+        button {
+          font-size: 14px;
+          border: 1px solid #b9bfdc;
+          border-radius: 5px;
+          background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
+          &:hover {
+            background: #3654ff;
+            color: white;
+            span {
+              color: white;
+            }
+          }
+          &:first-child {
+            margin: 0px;
+          }
+          span {
+            font-weight: bold;
+            font-size: 17px;
+          }
+        }
+        //字靠左
+        &.tleft {
+          text-align: left;
+          padding: 5px 10px;
+        }
+        //小紅點
+        &.redpoint {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            margin: 4px 0px 0px 3px;
+            background: #e60012;
+            border-radius: 10px;
+          }
+        }
+        //內頁黑體字間距
+        &.msp {
+          span {
+            margin-right: 20px;
+            &:last-child {
+              margin: 0px;
+            }
+          }
+        }
+        &.msp2 {
+          span {
+            margin-right: 60px;
+            &:last-child {
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+    //足球版首頁
+    &.table_1 {
+      tr {
+        td {
+          &:nth-child(1) {
+            width: 10%;
+            color: white;
+          }
+          &:nth-child(2) {
+            width: 8%;
+          }
+          &:nth-child(3) {
+            width: 8%;
+          }
+          &:nth-child(4) {
+            width: 25%;
+          }
+          &:nth-child(5) {
+            width: 8%;
+          }
+          &:nth-child(6) {
+            width: 25%;
+          }
+          &:nth-child(7) {
+            width: 8%;
+          }
+          &:nth-child(8) {
+            width: 8%;
+          }
+        }
+      }
+    }
+    //籃球版首頁
+    &.table_2 {
+      a {
+        margin: 5px;
+      }
+      .tleft {
+        padding: 10px 0px 10px 10px;
+      }
+      .rowup {
+        td {
+          &:nth-child(1) {
+            width: 10%;
+          }
+          &:nth-child(2) {
+            width: 10%;
+          }
+          &:nth-child(3) {
+            width: 38%;
+          }
+          &:nth-child(4) {
+            width: 6%;
+          }
+          &:nth-child(5) {
+            width: 6%;
+          }
+          &:nth-child(6) {
+            width: 6%;
+          }
+          &:nth-child(7) {
+            width: 6%;
+          }
+          &:nth-child(8) {
+            width: 6%;
+          }
+          &:nth-child(9) {
+            width: 6%;
+          }
+          &:nth-child(10) {
+            width: 6%;
+          }
+        }
+      }
+    }
+    //棒球版首頁
+    &.table_3 {
+      a {
+        margin: 5px;
+      }
+      .rowup {
+        td {
+          &:nth-child(1) {
+            width: 10%;
+          }
+          &:nth-child(2) {
+            width: 10%;
+          }
+          &:nth-child(3) {
+            width: 18%;
+          }
+          &:nth-child(4) {
+            width: 17%;
+          }
+          &:nth-child(5) {
+            width: 3%;
+          }
+          &:nth-child(6) {
+            width: 3%;
+          }
+          &:nth-child(7) {
+            width: 3%;
+          }
+          &:nth-child(8) {
+            width: 3%;
+          }
+          &:nth-child(9) {
+            width: 3%;
+          }
+          &:nth-child(10) {
+            width: 3%;
+          }
+          &:nth-child(11) {
+            width: 3%;
+          }
+          &:nth-child(12) {
+            width: 3%;
+          }
+          &:nth-child(13) {
+            width: 3%;
+          }
+          &:nth-child(14) {
+            width: 3%;
+          }
+          &:nth-child(15) {
+            width: 3%;
+          }
+          &:nth-child(16) {
+            width: 3%;
+          }
+          &:nth-child(17) {
+            width: 3%;
+          }
+          &:nth-child(18) {
+            width: 6%;
+          }
+        }
+      }
+    }
+    //足球版內頁
+    &.table_but1 {
+      tr {
+        td {
+          font-size: 16px;
+          &:nth-child(1) {
+            width: 8%;
+            padding-right: 10px;
+          }
+          &:nth-child(2) {
+            width: 36%;
+          }
+          &:nth-child(3) {
+            width: 8%;
+          }
+          &:nth-child(4) {
+            width: 35%;
+          }
+          &:nth-child(5) {
+            width: 12.5%;
+          }
+        }
+        button {
+          width: 94px;
+          height: 28px;
+          margin-left: 3px;
+        }
+      }
+    }
+    &.table_unbut1 {
+      tr {
+        td {
+          font-size: 17px;
+          &:nth-child(1) {
+            width: 8%;
+          }
+          &:nth-child(2) {
+            width: 44%;
+          }
+          &:nth-child(3) {
+            width: 35%;
+          }
+          &:nth-child(4) {
+            width: 12.5%;
+          }
+        }
+        button {
+          width: 94px;
+          height: 28px;
+          margin-left: 3px;
+          background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+        }
+      }
+    }
+    //棒/籃球/電競版內頁
+    &.table_but2 {
+      tr {
+        td {
+          font-size: 16px;
+          &:nth-child(1) {
+            width: 8%;
+            padding-right: 10px;
+          }
+          &:nth-child(2) {
+            width: 36%;
+          }
+          &:nth-child(3) {
+            width: 8%;
+          }
+          &:nth-child(4) {
+            width: 35%;
+          }
+          &:nth-child(5) {
+            width: 12.5%;
+          }
+        }
+        button {
+          width: 145px;
+          height: 28px;
+          margin-left: 3px;
+        }
+      }
+    }
+    &.table_unbut2 {
+      tr {
+        td {
+          font-size: 17px;
+          &:nth-child(1) {
+            width: 8%;
+          }
+          &:nth-child(2) {
+            width: 44%;
+          }
+          &:nth-child(3) {
+            width: 35%;
+          }
+          &:nth-child(4) {
+            width: 12.5%;
+          }
+        }
+        button {
+          width: 145px;
+          height: 28px;
+          margin-left: 3px;
+          background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+        }
+      }
+    }
+    //賽馬版內頁
+    &.table_but3 {
+      a {
+        margin: 4px 0px 0px 0px;
+      }
+      tr {
+        td {
+          font-size: 16px;
+          &:nth-child(1) {
+            width: 10%;
+          }
+          &:nth-child(2) {
+            width: 55%;
+          }
+          &:nth-child(3) {
+            width: 15%;
+          }
+          &:nth-child(4) {
+            width: 15%;
+          }
+          &:nth-child(5) {
+            width: 5%;
+          }
+          &.smallbut_rh {
+            position: relative;
+            .smallsp {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 15px;
+            }
+            button {
+              width: 65px;
+              float: right;
+              margin-top: 0px;
+            }
+          }
+        }
+        button {
+          width: 110px;
+          height: 34px;
+          margin: 5px 3px;
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    //專業版
+    &.table_sp1 {
+      a {
+        margin: 0px;
+      }
+      .rowup {
+        td {
+          font-size: 16px;
+          &:nth-child(1) {
+            width: 7%;
+            padding-right: 10px;
+          }
+          &:nth-child(2) {
+            width: 15%;
+          }
+          &:nth-child(3) {
+            width: 5%;
+          }
+          &:nth-child(4) {
+            width: 8%;
+          }
+          &:nth-child(5) {
+            width: 15%;
+          }
+          &:nth-child(6) {
+            width: 15%;
+          }
+          &:nth-child(7) {
+            width: 15%;
+          }
+          &:nth-child(8) {
+            width: 15%;
+          }
+          &:nth-child(9) {
+            width: 5%;
+          }
+        }
+      }
+      .smallbut_sc1,.smallbut_sc2 {
+        position: relative;
+        button {
+          width: 54px;
+          height: 18px;
+          float: right;
+          margin: 2px 5px;
+          font-weight: bold;
+          color: #ff0000;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+        .smallsp {
+          font-size: 15px;
+          font-weight: normal;
+          position: absolute;
+          left: 5px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .smallbut_sc2 {
+        button {
+          width: 69px;
+          height: 32px;
+        }
+      }
+    }
+    &.table_unsp1 {
+      a {
+        margin: 0px;
+      }
+      .rowup {
+        td {
+          font-size: 16px;
+          &:nth-child(1) {
+            width: 7%;
+          }
+          &:nth-child(2) {
+            width: 15%;
+          }
+          &:nth-child(3) {
+            width: 5%;
+          }
+          &:nth-child(4) {
+            width: 8%;
+          }
+          &:nth-child(5) {
+            width: 15%;
+          }
+          &:nth-child(6) {
+            width: 15%;
+          }
+          &:nth-child(7) {
+            width: 15%;
+          }
+          &:nth-child(8) {
+            width: 15%;
+          }
+          &:nth-child(9) {
+            width: 5%;
+          }
+        }
+      }
+      .smallbut_sc1,.smallbut_sc2 {
+        position: relative;
+        button {
+          width: 54px;
+          height: 18px;
+          float: right;
+          margin: 2px 5px;
+          font-weight: bold;
+          color: #005aff;
+          background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+          &:hover {
+            color: #fff;
+            background: #3654ff;
+          }
+        }
+        .smallsp {
+          font-size: 15px;
+          font-weight: normal;
+          position: absolute;
+          left: 5px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .smallbut_sc2 {
+        button {
+          width: 69px;
+          height: 32px;
+        }
+      }
+      .unsetsp {
+        position: relative;
+        span {
+          display: block;
+          padding: 5px 0px;
+          color: #4d515d;
+          &.smallsp {
+            font-size: 15px;
+            font-weight: normal;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          &.msp3 {
+            padding-left: 50px;
+          }
+        }
+      }
+    }
+    //足球比賽結果
+    &.table_result1 {
+      .rowup {
+        td {
+          font-size: 16px;
+          &:nth-child(1) {
+            width: 10%;
+          }
+          &:nth-child(2) {
+            width: 18%;
+          }
+          &:nth-child(3) {
+            width: 38%;
+          }
+          &:nth-child(4) {
+            width: 17%;
+          }
+          &:nth-child(5) {
+            width: 17%;
+          }
+        }
+      }
+    }
+    //棒球比賽結果
+    &.table_result2 {
+      .rowup {
+        td {
+          font-size: 16px;
+          &:nth-child(1) {
+            width: 10%;
+          }
+          &:nth-child(2) {
+            width: 20%;
+          }
+          &:nth-child(3) {
+            width: 25%;
+          }
+          &:nth-child(4) {
+            width: 4%;
+          }
+          &:nth-child(5) {
+            width: 4%;
+          }
+          &:nth-child(6) {
+            width: 4%;
+          }
+          &:nth-child(7) {
+            width: 4%;
+          }
+          &:nth-child(8) {
+            width: 4%;
+          }
+          &:nth-child(9) {
+            width: 4%;
+          }
+          &:nth-child(10) {
+            width: 4%;
+          }
+          &:nth-child(11) {
+            width: 4%;
+          }
+          &:nth-child(12) {
+            width: 4%;
+          }
+          &:nth-child(13) {
+            width: 4%;
+          }
+          &:nth-child(14) {
+            width: 5%;
+          }
+        }
+      }
+    }
+    //籃球比賽結果
+    &.table_result3 {
+      .rowup {
+        td {
+          font-size: 16px;
+          &:nth-child(1) {
+            width: 10%;
+          }
+          &:nth-child(2) {
+            width: 16%;
+          }
+          &:nth-child(3) {
+            width: 38%;
+          }
+          &:nth-child(4) {
+            width: 6%;
+          }
+          &:nth-child(5) {
+            width: 6%;
+          }
+          &:nth-child(6) {
+            width: 6%;
+          }
+          &:nth-child(7) {
+            width: 6%;
+          }
+          &:nth-child(8) {
+            width: 6%;
+          }
+          &:nth-child(9) {
+            width: 6%;
+          }
+        }
+      }
+    }
+  }
+    //上段字背景色+字色
+  .bg_gold {
+    background-color: #fedab8;
+    background: linear-gradient(to bottom, #fedab8 0%, #d9a87c 100%);
+    color: #6c2600;
+  }
+  .bg_gray {
+    background-color: #f0f0f0;
+    background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+    color: #4d515d;
+  }
+    //一般背景色
+  .bg_title {
+    background: #fff0e2;
+  }
+  .bg_title_un {
+    background: #f3f3f3;
+  }
+  .bg_wdgray {
+    background: #f8f8f8;
+  }
+  .bg_red {
+    background: #ff6767;
+  }
+  .bg_purple {
+    background: #b67bff;
+  }
+  .bg_darkgreen {
+    background: #50a1a2;
+  }
+    //一般字顏色
+  .wd_blue {
+    color: #005aff;
+  }
+  .wd_red {
+    color: #ff0000;
+  }
+}

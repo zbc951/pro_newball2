@@ -1,0 +1,178 @@
+.date_switch{
+    display: none;
+    &.active{
+        display: block;
+    }
+}
+.online_talk_bbox{
+    margin: -.8em 0 0;
+    padding: .8em 0 0;
+    background: #fafafa;
+}
+.online_talk_box{
+    background: #fafafa;
+    padding: 0 1em 2em;
+    overflow-y: scroll;
+    height: 37.857em;
+    &::-webkit-scrollbar {
+        width:0.357em;
+        position: absolute;
+        left: 0;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #80829f;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #eceef5;
+        border-radius: 10px;
+      }
+    .ser_reply{
+        color: #2d43b6;
+        display: inline-block;
+        font-size: 1em;
+        p{
+            position: relative;
+            cursor: pointer;
+            &:hover{
+                background: #2d43b6;
+                color: #fff;
+            }
+        }
+    }
+    .time_tag{
+        text-align: center;
+        color: #838ba0;
+        font-size: 1.1em;
+        margin: 1.286em 0;
+    }
+    .talk_wrap{
+        line-height: 100%;
+        margin-top: 1em;
+        &.t_right{
+            text-align: right;
+        }
+        .my_ava{
+            display: inline-block;
+            width: 3.143em;
+            height: 3.143em;
+            background: url(../image/my/avatar_m.png)no-repeat;
+            background-size: 100%;
+            vertical-align: top;
+            margin-left:0.429em;
+        }
+        .my_talk{
+            margin-top: .25em;
+            display: inline-block;
+            font-size: 1.1em;
+            line-height: 1.3em;
+            vertical-align: top;
+            background: #273aa1;
+            color: #fff;
+            padding: 0.857em 0.857em 0.6em 0.857em;
+            border-radius: 15px 0px 15px 15px;
+            box-shadow: 0 0 8px 1px #dfe1ec;
+        }
+        .ser_ava{
+            display: inline-block;
+            width: 3.143em;
+            height: 3.143em;
+            background: url(../image/my/avatar_s.png)no-repeat;
+            background-size: 100%;
+            vertical-align: top;
+            margin-right:0.429em;
+        }
+        .ser_talk{
+            margin-top: .25em;
+            display: inline-block;
+            font-size: 1.1em;
+            line-height: 1.3em;
+            vertical-align: top;
+            color: #4d515d;
+            border: 1px solid #c2c5ff;
+            padding: 0.857em 0.857em 0.6em 0.857em;
+            border-radius: 0px 15px 15px 15px;
+            box-shadow: 0 0 8px 1px #dfe1ec;
+            background: #fff;
+        }
+    }
+  
+}
+.online_text_area{
+    border-top: 1px solid #e0e1e3;
+    width: 100%;
+    background: #fff;
+    padding: 0.429em 1.429em 1em .786em;
+    overflow: hidden;
+    border-radius:0 0 8px 8px ;
+    .top_btn_ar{
+        .t_ic{
+            display: inline-block;
+            background: url(../image/my/t_icon_gray.png)no-repeat;
+            background-size: 200%;
+            width: 1.143em;
+            height: 1.143em;
+            cursor: pointer;
+            &.i1{
+                margin-right: .5em;
+            }
+            &.i2{
+                background-position-x: -1.143em;
+            }
+        }
+    }
+    .bot_btn_ar{
+        overflow: hidden;
+        .blue_btn{
+            color:#fff;
+            float: right;
+            text-align: center;
+            line-height: 2.714em;
+            width: 7.125em;
+            height: 2.714em;
+            border-radius: 4px;
+            background: linear-gradient(to bottom,#8996da 0%,#3046b7 100%);
+            &:hover{
+                background: linear-gradient(to bottom,#3046b7 0%,#8996da 100%);
+            }
+            .btn_w{
+                line-height: 100%;
+                vertical-align: middle;
+                position: relative;
+            }
+            p{
+                font-size: 1.1em;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 1.3em;
+                transform: translateY(-50%);
+            }
+            .tri{
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0.357em 0.357em 0 0.357em;
+                border-color: #fff transparent transparent transparent;
+                vertical-align: middle;
+                margin-left: 2em;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 1em;
+            }
+        }
+    }
+    .online_t_ar{
+        width: 100%;
+        resize: none;
+        height: 5em;
+        border: none;
+        padding: 0;
+        font-size: 1.1em;
+        &::placeholder{
+            color: #e7e9f0;
+        }
+    }
+}

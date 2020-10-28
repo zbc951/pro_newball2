@@ -1,0 +1,126 @@
+$f_size_16:1.143em;
+.more_bet{
+    display: block;
+    font-size: 1em;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 4px 2px #bac0db;
+    margin: .8em 0 0;
+    .red{
+        color: #ff0000;
+    }
+    .blue{
+        color: #005aff;
+    }
+    .g_name{
+        background-color: #414c88;
+        background: linear-gradient(to bottom, #6b76b4 0%, #414c88 100%);
+        color: #fff;
+        border-bottom: 1px solid #e0e1e3;
+        line-height: 2em;
+        p{
+            line-height: 1;
+            vertical-align: middle;
+            margin: 0 0 0 1em;
+            font-size: 1em;
+            display: inline-block;
+            
+        }
+    }
+    .g_table{
+        border: none;
+        background: #fff;
+        padding: 0 0 0 1%;
+        line-height: calc(3em - 12px);
+        overflow: hidden;
+        &.box_2{
+            span{
+                width: 49%;
+            }
+            
+        }
+        &.box_3{
+            span{
+                width: 32.33%;
+            }
+        }
+        &.box_4{
+            span{
+            width: 24%;  
+            }
+        }
+        &.box_6{
+            span{
+                width: 15.66%;
+            }
+        }
+        &.box_8{
+            span{
+                width: 11.5%;
+            }
+        }
+        span{
+            float: left;
+            width: auto;
+            margin: 3px 1% 3px 0;
+            border: 1px solid #b9bfdc;
+            border-radius: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+            position: relative;
+            cursor: pointer;
+            height: calc(3em - 14px);
+            line-height: calc(3em - 14px);
+            &:hover:hover:hover:hover,&.active.active.active.active.active{
+                background: #3654ff;
+                border: 1px solid transparent;
+                p{
+                    color: #fff;
+                }
+            }
+            
+            &.no_use{
+                background: none;
+                color: #4d515d;
+                border-color: transparent;
+                pointer-events: none;
+                &.no_use_title{
+                    line-height: calc(2.5em - 12px);
+                    height: calc(2.5em - 12px);
+                    margin-top: 8px;
+                }
+            }
+            &.solo{
+                p{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                }
+            &.two_text{
+                p{
+                    position: absolute;
+                    text-align: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    line-height: 1.2;
+                    &:first-child{
+                    left: 25%;
+                    width: 50%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 1em;
+                    }
+                    &:last-child{
+                    left: 70%;
+                    font-size: $f_size_16;
+                    }
+                }
+                }
+            
+        }
+    }
+}

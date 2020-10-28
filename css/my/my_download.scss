@@ -1,0 +1,147 @@
+.download_size.download_size.download_size{
+    padding: 1.429em;
+}
+.download_mb_box_size.download_mb_box_size.download_mb_box_size.download_mb_box_size{
+    line-height: calc(9.714em - 2em);
+    height: 9.714em;
+    position: relative;
+}
+.d_mb_box2.d_mb_box2.d_mb_box2.d_mb_box2{
+    height: 14.429em;
+    line-height: 100%;
+}
+//qa_left_box
+p{
+    &.qa_title{
+        font-size: 1.1em;
+        color: #4d515d;
+        padding-left:0.714em ;
+        margin-bottom: 1.429em;
+        white-space: nowrap;
+    }
+}
+.qa_wrap{
+    position: absolute;
+    top: 50%;
+    left: 2em;
+    transform: translateY(-50%);
+    height: 7.857em;
+    width: auto;
+    overflow: hidden;
+} 
+.qa_code{
+    display: inline-block;
+    float: left;
+    width: 7.857em;
+    height: 7.857em;
+    background: url(../image/my/download_app_qr.png)no-repeat;
+    background-size: 100%;
+}
+.qa_li_box{
+    line-height: 7.857em;
+    display: inline-block;
+    float: left;
+    margin-left: 3.857em;
+    text-align: center;
+    .b_wrap{
+        display: inline-block;
+        line-height: 100%;
+        vertical-align: middle;
+        .sup{
+            font-size: 1.05em;
+            color: #4d515d;
+            margin-bottom: 1.143em;
+        }
+ 
+    }
+}
+//<-----------------qa_left_box
+
+
+
+//browsers
+.browsers_box{
+    height: 50%;
+    width: 100%;
+    position: relative;
+    &:first-child{
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 1.429em);
+            height: 1px;
+            background: #b9c0d2;
+        }
+    }
+    .b_on_mid{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+    .b_link{
+        left: 1.929em;
+        line-height: 100%;
+        overflow: hidden;
+        i{
+            &.brow_i{
+                display: inline-block;
+                width: 3em;
+                height: 3em;
+                margin-right:2em;
+                vertical-align: middle;
+                background: url(../image/my/download_app_browser.png)no-repeat;
+                background-size: 200%;
+                @for $i from 1 through 2{
+                    &.i#{$i}{
+                        background-position-x: ($i - 1) * -3em;
+                    }
+                }
+            }
+        }
+        .brow_li_box{
+            display: inline-block;
+            line-height: 100%;
+            line-height: 3em;
+            .b_wrap{
+                vertical-align: middle;
+                line-height: 2;
+                display: inline-block;
+                p{
+                    font-size: 1.05em;
+                    color: #4d515d;
+                }
+            }
+        }
+    }
+}
+//<--------------browsers
+//blue_size_btn
+.setup_teach{
+    border: 1px solid #495cc5;
+    border-radius: 4px;
+    line-height: calc(2.214em - 2px);
+    height: 2.214em;
+    width: 6.786em;
+    text-align: center;
+    background: linear-gradient(to bottom, #fff 0% ,#d5daef 100%);
+    transition: all .2s ease-in-out;
+    &.browser_size{
+        right: 3em;
+        width: 4.929em;
+    }
+    &:hover{
+        background: linear-gradient(to bottom, #d5daef 0% ,#fff 100%);
+        transition: all .2s ease-in-out;
+    }
+    p{
+        font-size: 1.05em;
+        color: #4d515d;
+        vertical-align: middle;
+        font-weight: bold;
+        line-height: 100%;
+    }
+}

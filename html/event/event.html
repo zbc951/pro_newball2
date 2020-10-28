@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=1920,user-scalable=yes">
+  <!--RWD-->
+  <!--main.css-->
+  <link rel="stylesheet" href="../../css/main.css" />
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- swiper -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
+  <title>event</title>
+</head>
+
+<header class="cn">
+  <div class="time_line">
+    <div class="time_box">
+      <div class="right_box">
+        <p>GMT+8　2020-05-07　10:13:44</p>
+      </div>
+    </div>
+  </div>
+  <div class="h_box">
+    <div class="h_wrap other_size">
+      <div class="logo">
+        <h1> <a href="../../index.html"></a></h1>
+      </div>
+      <ul class="m_yet">
+        <li>
+          <p>市場列表</p>
+          <a href="../../index.html"></a>
+        </li>
+        <!-- <li><p>熱門賽事</p></li>
+            <li><p>今日賽事</p></li> -->
+        <li class="active">
+          <i class="i1"></i>
+          <p>優惠</p>
+          <a href="../event/event.html"></a>
+        </li>
+        <!-- <li><i class="i2"></i><p>贊助</p> -->
+
+        <li><i class="i3"></i>
+          <p>我的</p> <a href="../my/my_data.html"></a>
+        </li>
+      </ul>
+      <div class="right">
+        <div class="sign_yet ">
+          <div class="wrap">
+            <i></i>
+            <p><span class="in">登入</span> / <span class="up">註冊</span></p>
+          </div>
+        </div>
+        <div class="sign_in active">
+          <div class="wrap">
+            <div class="row">
+              <p class="gray">user545</p>
+              <div class="vip"><i></i>
+                <p>0</p>
+              </div>
+
+            </div>
+            <div class="row bot">
+              <p class="blue my_money">NT$ <span>0.00</span></p>
+              <i class="q"></i>
+              <button class="sign_out">
+                <p>登出</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--藉由containerfixed 使用mobile模式-->
+
+
+<div class="container cn">
+  <main class="event_page">
+    <div class="left ">
+      <ul class="event_page_ul">
+        <li class="active">
+          <i class="li_icon"></i>
+          <p>全部優惠</p>
+        </li>
+        <li>
+          <i class="li_icon i2"></i>
+          <p>限時活動</p>
+        </li>
+        <li>
+          <i class="li_icon i3"></i>
+          <p>新人首存</p>
+        </li>
+        <li>
+          <i class="li_icon i4"></i>
+          <p>日常活動</p>
+        </li>
+        <li>
+          <i class="li_icon i5"></i>
+          <p>高額返水</p>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul class="event_card active">
+        <li class="cw">
+          <div class="c_title">
+            <i class="li_icon i2 c_title_size"></i>
+            <p>限時活動</p>
+          </div>
+          <div class="card">
+            <article class="title_box">
+              <p class="time_s">2020/7/18-2020/7/26</p>
+              <p class="big_s">存款返21% 當贏不讓</p>
+              <p class="add_s">最高返利&ensp;<span>21672</span>&ensp;元</p>
+            </article>
+            <img src="../../image/event/e1.png" class="img_pos"></img>
+            <button class="check_more">
+              <p>查看詳情</p>
+            </button>
+          </div>
+        </li>
+        <li class="cw">
+          <div class="c_title ct_bg2">
+            <i class="li_icon i5 c_title_size"></i>
+            <p>高額返水</p>
+          </div>
+          <div class="card">
+            <article class="title_box">
+              <p class="time_s">2020/7/18-2020/7/26</p>
+              <p class="big_s">王者回歸 尊享888元</p>
+              <p class="add_s">召回老友享千元禮金</p>
+            </article>
+            <img src="../../image/event/e2.png" class="img_pos">
+            <button class="check_more">
+              <p>查看詳情</p>
+            </button>
+          </div>
+        </li>
+        <li class="cw">
+          <div class="c_title ct_bg3">
+            <i class="li_icon i4  c_title_size"></i>
+            <p>日常活動</p>
+          </div>
+          <div class="card">
+            <article class="title_box">
+              <p class="time_s">長期活動</p>
+              <p class="big_s">體育連贏8場</p>
+              <p class="add_s">最高可獲得&ensp;<span>12888</span>&ensp;元現金獎勵</p>
+            </article>
+            <img src="../../image/event/e3.png" class="img_pos">
+            <button class="check_more">
+              <p>查看詳情</p>
+            </button>
+          </div>
+        </li>
+        <li class="cw">
+          <div class="c_title ct_bg4">
+            <i class="li_icon i3   c_title_size"></i>
+            <p>新人首存</p>
+          </div>
+          <div class="card">
+            <article class="title_box">
+              <p class="time_s">2020/7/18-2020/7/26</p>
+              <p class="big_s">存款返21% 當贏不讓</p>
+              <p class="add_s">最高返利&ensp;<span>12888</span>&ensp;元現金獎勵</p>
+            </article>
+            <img src="../../image/event/e1.png" class="img_pos">
+            <button class="check_more">
+              <p>查看詳情</p>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <div class="event_inner">
+        <article class="inner_title_area">
+          <button class="back">
+            <i class="arrow_w"></i>
+            <p>返回</p>
+          </button>
+          <article class="title_box">
+            <p class="time_s">2020/7/18-2020/7/26</p>
+            <p class="big_s">存款返21% 當贏不讓</p>
+            <p class="add_s">最高返利 <span>21672</span> 元</p>
+          </article>
+          <img src="../../image/event/in_e1.png" alt="a" class="img_pos">
+        </article>
+        <article class="inner_box_area">
+          <div class="basic_bill">
+            <div class="b_name">
+              <p class="bf">活動條件</p>
+            </div>
+            <div class="save_type about_size">
+              <div class="mb_box free">
+                <p class="basic_t">活動對象:平台全站會員</p>
+                <p class="basic_t">活動時間：2020年7月18日00:00:00 - 2020年7月26日23:59:59 (存款只限7月18日當天)</p>
+              </div>
+              <!--m_box-->
+            </div>
+          </div>
+          <!--basic_bill-->
+          <div class="basic_bill">
+            <div class="b_name">
+              <p class="bf">活動內容</p>
+            </div>
+            <div class="save_type about_size">
+              <div class="mb_box free">
+                <p class="basic_t">• 凡是於2020年7月18日當天累計存款 ≧ 1000元，即可獲得最高總計21,672元的返利獎勵；</p>
+                <p class="basic_t">• 任意場館內每天有效投注額達到每日流水要求，及可獲得返利，若達到挑戰流水要求，則返利翻倍；</p>
+                <p class="t_t_1">例：存款5000元的用戶，每天需要有效投注達到588元即可領取≧ 1000元檔位的返利8元彩金。</p>
+                <p class="t_t_3">若該用戶在7月18日完成30,000元有效投注額則其當日返利翻倍為16元。</p>
+                <p class="basic_t">• 9天都獲得返利的用戶可在活動結束0點起48小時之內領去滿簽獎金，最高可獲得3,888元。</p>
+                <ul class="s_box">
+                  <li class="title">
+                    <div class="box">
+                      <p>存款金額</p>
+                    </div>
+                    <div class="box">
+                      <p>每日流水要求</p>
+                    </div>
+                    <div class="box">
+                      <p>每日返利 </p>
+                    </div>
+                    <div class="box">
+                      <p>挑戰流水</p>
+                    </div>
+                    <div class="box">
+                      <p>挑戰獎勵+返利</p>
+                    </div>
+                    <div class="box">
+                      <p>滿簽返利</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <p>≧ 1,000</p>
+                    </div>
+                    <div class="box">
+                      <p>588</p>
+                    </div>
+                    <div class="box">
+                      <p>8 </p>
+                    </div>
+                    <div class="box">
+                      <p>30,000</p>
+                    </div>
+                    <div class="box">
+                      <p>16</p>
+                    </div>
+                    <div class="box">
+                      <p>68</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <p>≧ 10,000</p>
+                    </div>
+                    <div class="box">
+                      <p>5,888</p>
+                    </div>
+                    <div class="box">
+                      <p>88</p>
+                    </div>
+                    <div class="box">
+                      <p>300,000</p>
+                    </div>
+                    <div class="box">
+                      <p>176</p>
+                    </div>
+                    <div class="box">
+                      <p>588</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box">
+                      <p>≧ 100,000</p>
+                    </div>
+                    <div class="box">
+                      <p>58,888</p>
+                    </div>
+                    <div class="box">
+                      <p>988</p>
+                    </div>
+                    <div class="box">
+                      <p>1,000,000</p>
+                    </div>
+                    <div class="box">
+                      <p>1,976</p>
+                    </div>
+                    <div class="box">
+                      <p>3,888</p>
+                    </div>
+                  </li>
+                </ul>
+                <p class="basic_t">
+                  舉例：已投注且有結算來判定有效投注額，如A用戶7月18日存款1000元參與活動，18日購買了1000元，
+                  其中400元當天有賽果進行了結算，600元20日才出賽果未結算，則18日返利時判定A用戶有效投注額未
+                  達到588，不予派彩，帶結算之後再進行補發派彩。溫馨提示活動期間內未結算，則無法進行派發。
+                </p>
+              </div>
+              <!--m_box-->
+            </div>
+          </div>
+          <!--basic_bill-->
+          <div class="basic_bill">
+            <div class="b_name">
+              <p class="bf">活動規則</p>
+            </div>
+            <div class="save_type about_size">
+              <div class="mb_box free">
+                <!-- <ol style="counter-reset: my-awesome-counter;">
+                      <li style="counter-increment: my-awesome-counter;">Lorem ipsum dolor sit amet.</li>
+                      <li style="counter-increment: my-awesome-counter;">Lorem ipsum dolor sit amet.</li>
+                      <li style="counter-increment: my-awesome-counter;">Lorem ipsum dolor sit amet.</li>
+                    </ol> -->
+                <p class="basic_t">1. 只有7月18日累計存款 ≧ 1000元才能參與本活動，其他時間的存款不計算在本次活動中；</p>
+                <p class="basic_t">2. 用戶需要每天達到要求的有效投注才能獲得返利，每天單獨核算，互相之間不影響(例，18日投注未</p>
+                <p class="t_t_1">達標，19日投注達標，20日可獲得返利)；</p>
+                <p class="basic_t">3. 返利彩金只需1倍流水，48小時內由系統統一發放，數量較多可能存在一定延時請用戶耐心等待。</p>
+              </div>
+              <!--m_box-->
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    
+  </main>
+
+  <div class="f_wrap no_search">
+    <div class="f_bot">
+      <ul class="yet">
+        <li>
+          <i class="i2"></i>
+          <p class="red">存款</p>
+          <a href="../my/my_bill_save.html"></a>
+        </li>
+        <li>
+          <i class="i6"></i>
+          <p>幫助中心</p>
+          <a href="../my/my_help.html"></a>
+        </li>
+        <li>
+          <i class="i7"></i>
+          <p>在線客服</p>
+          <a href="../my/my_contact_us_sev.html"></a>
+        </li>
+        <li>
+          <i class="i8"></i>
+          <p>APP下載</p>
+          <a href="../my/my_download_app.html"></a>
+        </li>
+      </ul>
+      <ul class="in active">
+        <li>
+          <i class="i2"></i>
+          <p class="red">存款</p>
+          <a href="../my/my_bill_save.html"></a>
+        </li>
+        <li>
+          <i class="i3"></i>
+          <p>轉點</p>
+          <a href="../my/my_bill_trans.html"></a>
+        </li>
+        <li>
+          <i class="i4"></i>
+          <p>交易紀錄</p>
+          <span class="nb active">6</span>
+          <a href="../my/my_bill_trans_record.html"></a>
+        </li>
+        <li>
+          <i class="i5"></i>
+          <p>投注紀錄</p>
+          <span class="nb active">3</span>
+          <a href="../my/my_bill_record.html"></a>
+        </li>
+        <li>
+          <i class="i6"></i>
+          <p>幫助中心</p>
+          <a href="../my/my_help.html"></a>
+        </li>
+        <li>
+          <i class="i7"></i>
+          <p>在線客服</p>
+          <a href="../my/my_contact_us_sev.html"></a>
+        </li>
+        <li>
+          <i class="i8"></i>
+          <p>APP下載</p>
+          <a href="../my/my_download_app.html"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="bg_t bg_t2 bg_t bg_t22"></div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    console.log('event');
+    let event_card_group = $('.right .event_card');
+    let event_inner = $('.right .event_inner');
+    let ei_back = $('.event_inner .back');
+    let check_more = $('.check_more');
+
+    check_more.click(function () {
+      if (event_inner.hasClass('active') != true) {
+        event_inner.siblings().removeClass('active')
+        return event_inner.addClass('active');
+      }
+    })//more_click
+    ei_back.click(function () {
+      if (event_card_group.hasClass('active') != true) {
+        event_card_group.siblings().removeClass('active')
+        return event_card_group.addClass('active');
+      }
+    })
+
+
+  })//ready
+
+</script>
+
+</body>

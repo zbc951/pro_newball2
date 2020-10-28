@@ -1,0 +1,4055 @@
+<!DOCTYPE html>
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=1920,user-scalable=yes,initial-scale=0.25">
+  <!--RWD-->
+  <!--main.css-->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>new_ball_2改</title>
+</head>
+
+<header class="cn">
+  <div class="time_line">
+    <div class="time_box">
+      <div class="right_box">
+        <p>GMT+8　2020-05-07　10:13:44</p>
+      </div>
+    </div>
+  </div>
+  <div class="h_box">
+    <div class="h_wrap">
+      <div class="logo">
+        <h1></h1>
+      </div>
+      <ul class="m_yet">
+        <li class="active">
+          <p>市場列表</p>
+          <a href="index.html"></a>
+        </li>
+        <!-- <li>
+          <p>熱門賽事</p>
+        </li> -->
+        <!-- <li>
+          <p>今日賽事</p>
+        </li> -->
+        <li><i class="i1"></i>
+          <p>優惠</p>
+          <a href="./html/event/event.html"></a>
+        </li>
+        <!-- <li><i class="i2"></i>
+          <p>贊助</p>
+        </li> -->
+        <li><i class="i3"></i>
+          <p>我的</p> <a href="./html/my/my_data.html"></a>
+        </li>
+      </ul>
+      <div class="right">
+        <div class="sign_yet active">
+          <div class="wrap">
+            <i></i>
+            <p><span class="in">登入</span> / <span class="up">註冊</span></p>
+          </div>
+        </div>
+        <div class="sign_in">
+          <div class="wrap">
+            <div class="row">
+              <p class="gray">user545</p>
+              <div class="vip"><i></i>
+                <p>0</p>
+              </div>
+
+            </div>
+            <div class="row bot">
+              <p class="blue my_money">NT$ <span>0.00</span></p>
+              <i class="q"></i>
+              <button class="sign_out">
+                <p>登出</p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<header class="en" style='display: none;'>
+  <div class="time_line">
+    <div class="time_box">
+      <div class="right_box">
+        <p>GMT+8　2020-05-07　10:13:44</p>
+      </div>
+    </div>
+  </div>
+  <div class="h_box">
+    <div class="h_wrap">
+      <div class="logo">
+        <h1></h1>
+      </div>
+      <ul class="m_yet">
+        <li class="active">
+          <p>Home</p>
+        </li>
+        <li>
+          <p>Highlight</p>
+        </li>
+        <li>
+          <p>Today'sEvents</p>
+        </li>
+        <li><i class="i1"></i>Sponsorship</li>
+        <li><i class="i2"></i>Discount</li>
+        <li><i class="i3"></i>
+          <p>My&ensp;Account</p>
+        </li>
+      </ul>
+      <div class="right">
+        <div class="sign_yet active">
+          <div class="wrap">
+            <i></i>
+            <p><span class="in">Log&ensp;in</span> <span class="m">/</span> <span class="up">Sign&ensp;up</span></p>
+          </div>
+        </div>
+        <div class="sign_in">
+          <div class="wrap">
+            <div class="row">
+              <p class="gray">user545</p>
+              <div class="vip"><i></i>
+                <p>0</p>
+              </div>
+            </div>
+            <div class="row bot">
+              <p class="blue">NT$ <span>0.00</span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!--藉由containerfixed 使用mobile模式-->
+<div class="test_box">
+  <div class="en_cn">
+    <li class="en">英文</li>
+    <li class="cn">中文</li>
+  </div>
+</div>
+
+<aside class="bet_solo black_bg">
+  <div class="bet_box blue">
+    <div class="title">
+      <p>賽事投注</p>
+      <p class="hidden_i_block">-注單確認</p>
+      <span class="close"></span>
+    </div>
+    <div class="content">
+      <ul class="bets">
+        <li class="line">
+          <div class="bet_gn">
+            <span class="i3"></span>
+            <p>足球-全場-獨贏</p>
+          </div>
+        </li>
+        <li>
+          <div class="bet_bill">
+            <div class="f_box b50">
+              <em class="wrap">
+                <span class="line_box"></span>
+                <span class="team_n">維羅納</span>
+                <span class="team_n">@ <span class="team_n red">1.95</span> </span>
+              </em>
+            </div>
+            <div class="f_box b50">
+              <em class="wrap">
+                <span class="bet_row">
+                  <span class="t_hidden">義大利甲組聯賽 </span><span class="hidden_i_block">F1550701</span>
+                </span>
+                <span class="bet_row">
+                  <span class="t_hidden">
+                    <span>拉素[主]</span>
+                    <span class="red">2+50</span>
+                    <span class="blue">vs</span>
+                    <span>維羅納</span>
+                  </span>
+                </span>
+              </em>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="total">
+            <div class="f_box b33">
+              <em class="wrap">
+                <span>可贏(參考):</span>
+                <span class="l_blue">150</span>
+              </em>
+            </div>
+            <div class="f_box b33">
+              <em class="wrap">
+                <span>單注限額:</span>
+                <span class="l_blue">150</span>
+              </em>
+            </div>
+            <div class="f_box b33">
+              <em class="wrap">
+                <span>餘額:</span>
+                <span class="l_blue">150</span>
+              </em>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="computer active">
+            <div class="f_box b48">
+              <div class="row for_input">
+                <p>投注金額</p>
+                <input type="text" class="bet_in" placeholder="最低限額150">
+              </div>
+              <div class="row">
+                <p>可贏金額(參考)</p>
+                <input class="red" type="text">
+              </div>
+            </div>
+            <div class="f_box b52">
+              <div class="row">
+                <button class="f_box b30">+100</button>
+                <button class="f_box b30">+100</button>
+                <button class="f_box b30">+100</button>
+              </div>
+              <div class="row">
+                <button class="f_box b30">+100</button>
+                <button class="f_box b30">+100</button>
+                <button class="f_box b30">+100</button>
+              </div>
+              <div class="row">
+                <button class="f_box b30">取消</button>
+                <button class="f_box b617 bet_btn">投注</button>
+              </div>
+            </div>
+          </div>
+          <div class="check_page">
+            <div class="b50 f_box">
+              <em class="wrap">
+                <span class="check_icon"></span>
+                <span class="l_blue">注單已確認</span>
+              </em>
+            </div>
+            <div class="b50 f_box">
+              <em class="wrap">
+                <span class="bet_row">
+                  <span>下注時間: </span><span>2020-05-27 16:26:07</span>
+                </span>
+                <span class="bet_row">
+                  <span>單號: </span><span class="d_blue">CPR09621621</span>
+                </span>
+              </em>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</aside>
+
+<aside class="black_bg sign_up">
+  <div class="sign_box sign_up_size">
+    <article class="title">
+      <p class="basic_t">會員註冊</p>
+      <div class="right_box">
+        <div class="sign_close"></div>
+      </div>
+    </article>
+    <article class="content">
+      <div class="row">
+        <div class="r_box">
+          <p class="r_t">輸入帳號</p>
+          <input type="text" class="in_box">
+        </div>
+        <div class="r_box">
+          <p class="r_t">手機號碼</p>
+          <input type="text" class="in_box" placeholder="手機號碼(必填資料)">
+        </div>
+      </div>
+      <!--row-->
+      <div class="row">
+        <div class="r_box">
+          <p class="r_t">暱稱</p>
+          <input type="text" class="in_box" placeholder="暱稱(必填資料)">
+        </div>
+        <div class="r_box">
+          <p class="r_t">電子信箱</p>
+          <input type="text" class="in_box">
+        </div>
+      </div>
+      <!--row-->
+      <div class="row">
+        <div class="r_box">
+          <p class="r_t">密碼</p>
+          <input type="password" class="in_box" placeholder="密碼(必填資料)">
+        </div>
+        <div class="r_box">
+          <p class="r_t">微信帳號</p>
+          <input type="text" class="in_box">
+        </div>
+      </div>
+      <!--row-->
+      <div class="row">
+        <div class="r_box">
+          <p class="r_t">確認密碼</p>
+          <input type="password" class="in_box" placeholder="確認密碼(必填資料)">
+        </div>
+        <div class="r_box">
+          <p class="r_t">QQ帳號</p>
+          <input type="text" class="in_box">
+        </div>
+      </div>
+      <!--row-->
+      <div class="btn_area">
+        <div class="btn_wrap">
+          <button class="cancel sign_up_cancel">
+            <p>取消</p>
+          </button>
+          <button class="push sign_up_push">
+            <p>送出</p>
+          </button>
+        </div>
+
+      </div>
+    </article>
+  </div>
+</aside>
+<aside class="black_bg sign_up_ok">
+  <div class="sign_box sign_up_ok_size">
+    <article class="title">
+      <p class="basic_t">註冊成功</p>
+      <div class="right_box">
+        <div class="sign_close"></div>
+      </div>
+    </article>
+    <article class="content">
+      <div class="icon_area">
+        <div class="ic_wrap">
+          <i class="success"></i>
+          <p class="succ_t">註冊成功！</p>
+        </div>
+      </div>
+      <div class="btn_area">
+        <div class="btn_wrap">
+          <button class="go_save">
+            <p>前去存款</p>
+            <a href="./html/my/my_bill_save.html"></a>
+          </button>
+          <button class="cancel">
+            <p>回首頁</p>
+            <a href="./index.html"></a>
+          </button>
+        </div>
+
+      </div>
+    </article>
+  </div>
+</aside>
+<aside class="black_bg sign_in">
+  <div class="sign_box sign_in_size">
+    <article class="title">
+      <p class="basic_t">會員登入</p>
+      <div class="right_box">
+        <div class="sign_close"></div>
+      </div>
+    </article>
+    <article class="content">
+      <div class="row">
+
+        <p class="user_t">用戶帳號</p>
+        <div class="right_box">
+          <input type="text" class="in_box">
+        </div>
+      </div>
+      <div class="row">
+        <p class="user_t">用戶密碼</p>
+        <div class="right_box">
+          <input type="password" class="in_box">
+        </div>
+      </div>
+      <div class="row">
+        <div class="check_wrap">
+          <input type="checkbox" id="c1">
+          <label for="c1">
+            <i class="cube"></i>
+            <p class="user_t">記住密碼</p>
+          </label>
+        </div>
+        <div class="right_box">
+          <p class="user_t pw_forget">忘記密碼?</p>
+        </div>
+      </div>
+      <div class="btn_area">
+        <div class="btn_wrap sign_in_size">
+          <button class="cancel sign_up_btn">
+            <p>註冊</p>
+          </button>
+          <button class="push sign_in_btn">
+            <p>登入</p>
+          </button>
+        </div>
+
+      </div>
+    </article>
+  </div>
+</aside>
+
+<div class="container cn">
+
+  <main>
+    <div class="left ">
+      <ul class="index active">
+        <li>
+          <i class="i1"></i>
+          <a href="#"><span>我的最愛</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i2"></i>
+          <a href="#"><span>熱門賽事</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i3"></i>
+          <a href="./html/balls/soccer.html"><span>足球</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i4"></i>
+          <a href="./html/balls/basball.html"><span>棒球</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i5"></i>
+          <a href="./html/balls/basketball.html"><span>籃球</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i6"></i>
+          <a href="./html/balls/horse_race.html"><span>賽馬賽狗</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i7"></i>
+          <a href="./html/balls/esp.html"><span>電競</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i8"></i>
+          <a href="./html/balls/stock.html"><span>股票指數</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i9"></i>
+          <a href="./html/balls/lottery_inner.html"><span>彩球</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i10"></i>
+          <a href="./html/balls/ice_ball_inner.html"><span>冰球</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i11"></i>
+          <a href="./html/balls/tennis_inner.html"><span>網球</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i12"></i>
+          <a href="./html/balls/snooker_inner.html"><span>斯諾克</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i13"></i>
+          <a href="./html/balls/v_ball_inner.html"><span>排球</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i14"></i>
+          <a href="./html/balls/motor_sport_inner.html"><span>賽車</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i15"></i>
+          <a href="./html/balls/badminton_inner.html"><span>羽毛球</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i16"></i>
+          <a href="./html/balls/football_inner.html"><span>沙灘足球</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i17"></i>
+          <a href="./html/balls/bso_inner.html"><span>美式足球</span><p class="num">295</p></a>
+        </li>
+        <li>
+          <i class="i18"></i>
+          <a href="./html/balls/table_ball_inner.html"><span>乒乓球</span><p class="num">295</p></a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="right">
+      <!--0623 card div是方格會被float left影響 使用子物件請用span 或者p i-->
+
+      <div class="wrap none">
+        <div class="search_bar">
+        </div>
+        <!--search_bar-->
+      </div>
+      <!--已登入介面-->
+      <div class="sign_in_status">
+        <div class="wrap fixed">
+          <div class="search_bar">
+            <p class="active">所有賽事
+              <a href="./html/balls/soccer.html"></a>
+            </p>
+            <div class="line"></div>
+            <p>早盤投注</p>
+            <div class="line"></div>
+            <p>串關投注
+              <a href="./html/special/soccer_bet_page.html"></a>
+            </p>
+            <div class="line"></div>
+            <p>比賽結果
+              <a href="./html/balls/soccer_result.html"></a>
+            </p>
+            <div class="right_box">
+              <p class="ball_cho">選擇聯盟</p>
+              <span class="arrow"></span>
+              <div class="line"></div>
+              <p>時間排序</p>
+              <span class="arrow"></span>
+              <div class="line"></div>
+              <p class="beginner start">新手版</p>
+              <span class="arrow"></span>
+            </div>
+          </div>
+          <!--fixed 才是真的-->
+          <div class="league_choice">
+            <div class="row">
+              <span class="check active"></span>
+              <p>選取/取消所有聯盟</p>
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>義大利甲組聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>法國甲組聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>英格蘭足總盃</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>埃及超級聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>阿爾及利亞甲組聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>巴林超級聯賽</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>巴西盃</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>巴西里約州甲組聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>巴西巴西利亞甲組聯賽</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>巴西巴亞諾甲組聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>巴西伯南布哥甲組一聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>比利時盃</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>德國足協盃</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>法國甲組聯賽-特別投注</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>克羅地亞盃</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>超級盃(在卡塔爾)</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>卡塔爾埃米爾盃</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>墨西哥超級聯賽</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>摩洛哥甲組聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>南美洲球會盃</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>南美自由盃</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>南非盃</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>奇幻賽事</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>塞浦路斯盃</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>塞浦路斯甲組聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>沙特超級聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>英格蘭超級聯賽</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>土耳其盃</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>突尼斯甲組聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>匈牙利甲組聯賽</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>希臘盃</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>西班牙盃</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>亞洲足聯盃外圍賽-附加賽</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>以色列超級聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>以色列北部國家聯賽U19</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>伊朗超級聯賽</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>印度超級聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>印度I聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>印度果阿超級聯賽</p>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>義大利青年盃U19</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>英格蘭足球協會南部全國聯賽</p>
+              </div>
+              <div class="b33_3">
+                <span class="check active"></span>
+                <p>英格蘭伊斯米安超級聯賽</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="book gold">
+          <span class="b1"></span>
+          <p>進行中的比賽</p>
+        </div>
+        <ul class="card gold normal_mode">
+          <li class="g_name"><i class="i1"></i>
+            <p>足球-<span>義大利甲組聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+          </li>
+          <li class="title">
+            <div class="b8 t_mid">
+              <p>時間</p>
+            </div>
+            <div class="b36_3 t_mid">
+              <p>隊伍</p>
+            </div>
+            <div class="b8 t_mid">
+              <p>總分</p>
+            </div>
+            <div class="b35 t_mid">
+              <p>獨贏</p>
+            </div>
+            <div class="b11 t_mid">
+              <p>更多</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>拉素 <span class="blue">VS</span> 維羅納</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>0 - 1</p>
+            </div>
+            <div class="b35 t_mid box_3">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>和</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                      <a href="./html/balls/soccer_inner.html"></a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>拉素 <span class="blue">VS</span> 維羅納</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>0 - 1</p>
+            </div>
+            <div class="b35 t_mid box_3">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>和</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                      <a href="./html/balls/soccer_inner.html"></a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>拉素 <span class="blue">VS</span> 維羅納</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>0 - 1</p>
+            </div>
+            <div class="b35 t_mid box_3">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>和</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                      <a href="./html/balls/soccer_inner.html"></a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>拉素 <span class="blue">VS</span> 維羅納</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>0 - 1</p>
+            </div>
+            <div class="b35 t_mid box_3">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>和</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                      <a href="./html/balls/soccer_inner.html"></a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+
+        <div class="book blue">
+          <span class="b1"></span>
+          <p>未開始的比賽</p>
+        </div>
+        <ul class="card gray normal_mode">
+          <li class="g_name"><i class="i1"></i>
+            <p>足球-<span>義大利甲組聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+          </li>
+          <li class="title">
+            <div class="b8 t_mid">
+              <p>時間</p>
+            </div>
+            <div class="b46 t_mid">
+              <p>隊伍</p>
+            </div>
+            <div class="b35 t_mid">
+              <p>獨贏</p>
+            </div>
+            <div class="b11 t_mid">
+              <p>更多</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>拉素 <span class="blue">VS</span> 維羅納</p>
+            </div>
+            <div class="b35 t_mid box_3">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>和</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                      <a href="./html/balls/basketball_inner.html"></a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>拉素 <span class="blue">VS</span> 維羅納</p>
+            </div>
+            <div class="b35 t_mid box_3">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>和</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                      <a href="./html/balls/basketball_inner.html"></a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>拉素 <span class="blue">VS</span> 維羅納</p>
+            </div>
+            <div class="b35 t_mid box_3">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>和</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                      <a href="./html/balls/basketball_inner.html"></a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>拉素 <span class="blue">VS</span> 維羅納</p>
+            </div>
+            <div class="b35 t_mid box_3">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>和</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                      <a href="./html/balls/basketball_inner.html"></a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+
+        <div class="book gray">
+          <span class="b1"></span>
+          <p>已完成的比賽</p>
+        </div>
+        <ul class="card gray normal_mode">
+          <li class="g_name"><i class="i1"></i>
+            <p>足球-<span>義大利甲組聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+          </li>
+          <li class="title">
+            <div class="b8 t_mid">
+              <p>時間</p>
+            </div>
+            <div class="b36_3 t_mid">
+              <p>隊伍</p>
+            </div>
+            <div class="b8 t_mid">
+              <p>總分</p>
+            </div>
+            <div class="b35 t_mid">
+              <p>獨贏</p>
+            </div>
+            <div class="b11 t_mid">
+              <p>更多</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>03:45</p>
+            </div>
+            <div class="b36_3 t_left">
+              <p>拉素 <span class="blue">VS</span> 維羅納</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>3 - 5</p>
+            </div>
+            <div class="b35 t_mid box_3 no_use">
+              <span class="two_text">
+                <p>主</p>
+                <p>0.960</p>
+              </span>
+              <span class="two_text">
+                <p>和</p>
+                <p>0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p>0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>03:45</p>
+            </div>
+            <div class="b36_3 t_left">
+              <p>拉素 <span class="blue">VS</span> 維羅納</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>3 - 5</p>
+            </div>
+            <div class="b35 t_mid box_3 no_use">
+              <span class="two_text">
+                <p>主</p>
+                <p>0.960</p>
+              </span>
+              <span class="two_text">
+                <p>和</p>
+                <p>0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p>0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--未登入介面-->
+      <div class="yet_sign_in_status active">
+        <div class="wrap fixed big_size">
+          <div class="search_box">
+            <div class="search_bar big_size">
+              <div class="day_wrap">
+                <div class="l_btn"></div>
+                <span>今日</span>
+                <div class="r_btn"></div>
+              </div>
+              <div class="line"></div>
+              <div class="tag_wrap">
+                <span class="tag"><span>明日</span></span>
+                <span class="tag"><span>本週</span></span>
+                <span class="tag"><span>下週</span></span>
+              </div>
+              <!-- <p class="set">設定</p>
+              <span class="arrow"></span> -->
+              <div class="right_box">
+                <p class="ball_cho">選擇球種</p>
+                <div class="line"></div>
+                <p>時間排序</p>
+                <span class="arrow"></span>
+              </div>
+            </div>
+            <div class="balls_choice">
+              <div class="row">
+                <span class="check active"></span>
+                <p>選取/取消所有球種</p>
+              </div>
+              <div class="row">
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>足球</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>棒球</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>籃球</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>賽馬賽狗</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>電競</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>指數</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>彩球</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>冰球</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>網球</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>斯諾克</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>排球</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>賽車</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>羽毛球</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>美式足球</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>沙灘足球</p>
+                </div>
+                <div class="b12_5">
+                  <span class="check active"></span>
+                  <p>乒乓球</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="book gold"><span class="b1"></span><p>進行中的比賽</p></div>
+
+        <!--修改開始-->
+
+        <!--足球進行中新增-->
+        <div class="rb_card">
+          <!--上段字-->
+          <p class="bg_gold"><span class="soccer"></span>足球-義大利甲組聯賽 02月06日 03:45</p>
+          <table class="table_1">
+            <!--標題-->
+            <tr class="bg_title">
+              <th>聯盟</th>
+              <th>時間</th>
+              <th>狀態</th>
+              <th class="tleft">主隊</th>
+              <th>全場</th>
+              <th class="tleft">客隊</th>
+              <th>半場</th>
+              <th>更多</th>
+            </tr>
+            <!--第一行-->
+            <tr>
+              <td class="bg_red">happy unhappy</td>
+              <td class="redpoint wd_blue">40:20</td>
+              <td class="wd_red">下半場</td>
+              <td class="tleft">拉素</td>
+              <td class="wd_red">4 - 2</td>
+              <td class="tleft">維羅納</td>
+              <td class="wd_red">3 - 0</td>
+              <td><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第二行-->
+            <tr class="bg_wdgray">
+              <td class="bg_red">義甲甲甲甲甲甲甲甲</td>
+              <td class="redpoint wd_blue">40:20</td>
+              <td class="wd_red">下半場</td>
+              <td class="tleft">拉素</td>
+              <td class="wd_red">4 - 2</td>
+              <td class="tleft">維羅納</td>
+              <td class="wd_red">3 - 0</td>
+              <td><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第三行-->
+            <tr>
+              <td class="bg_purple">義甲</td>
+              <td class="redpoint wd_blue">40:20</td>
+              <td class="wd_red">下半場</td>
+              <td class="tleft">拉素</td>
+              <td class="wd_red">4 - 2</td>
+              <td class="tleft">維羅納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納</td>
+              <td class="wd_red">3 - 0</td>
+              <td><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第四行-->
+            <tr class="bg_wdgray">
+              <td class="bg_darkgreen">義甲</td>
+              <td class="redpoint wd_blue">40:20</td>
+              <td class="wd_red">下半場</td>
+              <td class="tleft">拉素素素素素素素素素素素素素素素素素素素素素素素素素素素素素素素素素素</td>
+              <td class="wd_red">4 - 2</td>
+              <td class="tleft">維羅納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納納</td>
+              <td class="wd_red">3 - 0</td>
+              <td><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+          </table>
+        </div>
+        <!--籃球進行中新增-->
+        <div class="rb_card">
+          <!--上段字-->
+          <p class="bg_gold"><span class="basketball"></span>籃球-NBA職業籃球聯賽 02月06日 03:45</p>
+          <table class="table_2">
+            <!--標題-->
+            <tr class="bg_title">
+              <th>時間</th>
+              <th>狀態</th>
+              <th>主客隊伍</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>OT</th>
+              <th>總分</th>
+              <th>更多</th>
+            </tr>
+            <!--第一行上半部-->
+            <tr class="rowup">
+              <td class="redpoint wd_blue" rowspan="2">03:45</td>
+              <td class="wd_red" rowspan="2">第3節</td>
+              <td class="tleft">多倫多暴龍</td>
+              <td>9</td>
+              <td>25</td>
+              <td class="wd_red">30</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td rowspan="2"><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第一行下半部/隊名開始-->
+            <tr>
+              <td class="tleft">聖安東尼奧馬刺</td>
+              <td>5</td>
+              <td>14</td>
+              <td class="wd_red">17</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <!--第二行上半部-->
+            <tr class="rowup bg_wdgray">
+              <td class="redpoint wd_blue" rowspan="2">03:45</td>
+              <td class="wd_red" rowspan="2">第3節</td>
+              <td class="tleft">多倫多暴龍</td>
+              <td>9</td>
+              <td>25</td>
+              <td class="wd_red">30</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td rowspan="2"><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第二行下半部/隊名開始-->
+            <tr class="bg_wdgray">
+              <td class="tleft">聖安東尼奧馬刺刺刺刺刺刺刺刺刺刺刺刺刺刺刺刺刺刺刺刺刺</td>
+              <td>5</td>
+              <td>14</td>
+              <td class="wd_red">17</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </table>
+        </div>
+        <!--棒球進行中新增-->
+        <div class="rb_card">
+          <!--上段字-->
+          <p class="bg_gold"><span class="baseball"></span>棒球-NPB日本職業棒球聯賽 02月06日 03:45</p>
+          <table class="table_3">
+            <!--標題-->
+            <tr class="bg_title">
+              <th>時間</th>
+              <th>狀態</th>
+              <th>主客隊伍</th>
+              <th>上場投手</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>OT</th>
+              <th>R</th>
+              <th>H</th>
+              <th>E</th>
+              <th>更多</th>
+            </tr>
+            <!--第一行上半部-->
+            <tr class="rowup">
+              <td class="wd_blue redpoint" rowspan="2">03:45</td>
+              <td class="wd_red" rowspan="2">7局下</td>
+              <td>日本火腿</td>
+              <td>半澤直樹</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td class="wd_red">0</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td rowspan="2"><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第一行下半部/隊名開始-->
+            <tr>
+              <td>橫濱灣星</td>
+              <td>大和田曉</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td class="wd_red">2</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <!--第二行上半部-->
+            <tr class="rowup bg_wdgray">
+              <td class="wd_blue redpoint" rowspan="2">03:45</td>
+              <td class="wd_red" rowspan="2">7局下</td>
+              <td>日本火腿</td>
+              <td>半澤直樹</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td class="wd_red">0</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td rowspan="2"><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第二行下半部/隊名開始-->
+            <tr class="bg_wdgray">
+              <td>橫濱灣星星星星星星星星星</td>
+              <td>大和田曉</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td class="wd_red">2</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </table>
+        </div>
+        <!--/結束-->
+        <div class="book blue"><span class="b1"></span><p>未開始的比賽</p></div>
+        <!--足球未開賽新增-->
+        <div class="rb_card">
+          <!--上段字-->
+          <p class="bg_gray"><span class="soccer_un"></span>足球-義大利甲組聯賽 02月06日 03:45</p>
+          <table class="table_1">
+            <!--標題-->
+            <tr class="bg_title_un">
+              <th>聯盟</th>
+              <th>時間</th>
+              <th>狀態</th>
+              <th class="tleft">主隊</th>
+              <th>全場</th>
+              <th class="tleft">客隊</th>
+              <th>半場</th>
+              <th>更多</th>
+            </tr>
+            <!--第一行-->
+            <tr>
+              <td class="bg_red">義甲</td>
+              <td>未開賽</td>
+              <td>下半場</td>
+              <td class="tleft">拉素</td>
+              <td>-</td>
+              <td class="tleft">維羅納</td>
+              <td>-</td>
+              <td><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+          </table>
+        </div>
+        <!--棒球未開賽新增-->
+        <div class="rb_card">
+          <!--上段字-->
+          <p class="bg_gray"><span class="baseball_un"></span>棒球-NPB日本職業棒球聯賽 02月06日 03:45</p>
+          <table class="table_3">
+            <!--上段字-->
+            <tr class="bg_title_un">
+              <th>時間</th>
+              <th>狀態</th>
+              <th>主客隊伍</th>
+              <th>上場投手</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>OT</th>
+              <th>R</th>
+              <th>H</th>
+              <th>E</th>
+              <th>更多</th>
+            </tr>
+            <!--第一行上半部-->
+            <tr class="rowup">
+              <td rowspan="2">18:20</td>
+              <td rowspan="2">未開賽</td>
+              <td>日本火腿</td>
+              <td>半澤直樹</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td rowspan="2"><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第一行下半部/隊名開始-->
+            <tr>
+              <td>橫濱灣星</td>
+              <td>大和田曉</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </table>
+        </div>
+        <!--籃球未開賽新增-->
+        <div class="rb_card">
+          <!--上段字-->
+          <p class="bg_gray"><span class="basketball_un"></span>籃球-NBA職業籃球聯賽 02月06日 03:45</p>
+          <table class="table_2">
+            <!--標題-->
+            <tr class="bg_title_un">
+              <th>時間</th>
+              <th>狀態</th>
+              <th>主客隊伍</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>OT</th>
+              <th>總分</th>
+              <th>更多</th>
+            </tr>
+            <!--第一行上半部-->
+            <tr class="rowup">
+              <td rowspan="2">03:45</td>
+              <td rowspan="2">未開賽</td>
+              <td class="tleft">多倫多暴龍</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td rowspan="2"><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第一行下半部/隊名開始-->
+            <tr>
+              <td class="tleft">聖安東尼奧馬刺</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </table>
+        </div>
+        <!--/結束-->
+        <div class="book gray"><span class="b1"></span><p>已完成的比賽</p></div>
+        <!--足球已完賽新增-->
+        <div class="rb_card">
+          <!--上段字-->
+          <p class="bg_gray"><span class="soccer_un"></span>足球-義大利甲組聯賽 02月06日 03:45</p>
+          <table class="table_1">
+            <!--標題-->
+            <tr class="bg_title_un">
+              <th>聯盟</th>
+              <th>開賽時間</th>
+              <th>狀態</th>
+              <th class="tleft">主隊</th>
+              <th>全場</th>
+              <th class="tleft">客隊</th>
+              <th>半場</th>
+              <th>更多</th>
+            </tr>
+            <!--第一行-->
+            <tr>
+              <td class="bg_red">義甲</td>
+              <td>18:20</td>
+              <td>完賽</td>
+              <td class="tleft">拉素</td>
+              <td class="wd_red">4 - 2</td>
+              <td class="tleft">維羅納</td>
+              <td>3 - 0</td>
+              <td><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第二行-->
+            <tr class="bg_wdgray">
+              <td class="bg_red">義甲</td>
+              <td>18:20</td>
+              <td>完賽</td>
+              <td class="tleft">拉素</td>
+              <td class="wd_red">4 - 2</td>
+              <td class="tleft">維羅納</td>
+              <td>3 - 0</td>
+              <td><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第三行-->
+            <tr>
+              <td class="bg_purple">義甲</td>
+              <td>18:20</td>
+              <td>完賽</td>
+              <td class="tleft">拉素</td>
+              <td class="wd_red">4 - 2</td>
+              <td class="tleft">維羅納</td>
+              <td>3 - 0</td>
+              <td><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第四行-->
+            <tr class="bg_wdgray">
+              <td class="bg_darkgreen">義甲</td>
+              <td>18:20</td>
+              <td>完賽</td>
+              <td class="tleft">拉素</td>
+              <td class="wd_red">4 - 2</td>
+              <td class="tleft">維羅納</td>
+              <td>3 - 0</td>
+              <td><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+          </table>
+        </div>
+        <!--棒球已完賽新增-->
+        <div class="rb_card">
+          <!--上段字-->
+          <p class="bg_gray"><span class="baseball_un"></span>棒球-NPB日本職業棒球聯賽 02月06日 03:45</p>
+          <table class="table_3">
+            <!--上段字-->
+            <tr class="bg_title_un">
+              <th>時間</th>
+              <th>狀態</th>
+              <th>主客隊伍</th>
+              <th>上場投手</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>OT</th>
+              <th>R</th>
+              <th>H</th>
+              <th>E</th>
+              <th>更多</th>
+            </tr>
+            <!--第一行上半部-->
+            <tr class="rowup">
+              <td rowspan="2">18:20</td>
+              <td rowspan="2">完賽</td>
+              <td>日本火腿</td>
+              <td>半澤直樹</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2</td>
+              <td>2</td>
+              <td>-</td>
+              <td class="wd_red">4</td>
+              <td>0</td>
+              <td>0</td>
+              <td rowspan="2"><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a></td>
+            </tr>
+            <!--第一行下半部/隊名開始-->
+            <tr>
+              <td>橫濱灣星</td>
+              <td>大和田曉</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2</td>
+              <td>3</td>
+              <td>0</td>
+              <td>-</td>
+              <td class="wd_red">5</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+        <!--/結束-->
+
+      <!--yet_sign_in_status-->
+
+    </div>
+    <!--right-->
+    <div class="right_2">
+      <div class="live_page">
+        <div class="live_title">
+          <div class="wrap">
+            <div class="l_box"><span class="icon_tv_gold"></span>
+              <p class="live_t">體育直播</p>
+            </div>
+            <div class="r_box">
+              <p class="teach_btn">投注教程</p><span class="icon_infor"></span>
+            </div>
+            <div class="infor_con">
+              <p>
+                此版面顯示的所有直播內容僅參考，會員亦可
+                使用此內容為指南。我們將盡最大努力確保顯
+                示的內容是正確的，如有錯誤，本公司不承擔
+                任何責任。對於滾球比分，例如滾球讓球，將
+                以投注時在投注單中顯示的正確本分為準。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="live_view">
+          <div class="live_title for_view">
+            <div class="l_box">
+              <p>布咸美恩斯&ensp;1905<span>接球員_Sea_food</span></p>
+            </div>
+            <div class="m_box">
+              <span class="point_left">1</span>
+              <p class="blue">VS</p><span class="point_right">1</span>
+            </div>
+            <div class="r_box">
+              <p>布拉格斯拉維亞B<span>接球員_Chickens</span></p>
+            </div>
+          </div>
+          <div class="live_box">
+            <div class="live_box_in"></div>
+          </div>
+        </div>
+        <div class="live_games">
+          <div class="live_tag">
+            <button class="live_1 active">直播賽事</button>
+            <button class="live_2">聊天室</button>
+          </div>
+          <div class="live_content active">
+            <div class="live_balls active">
+              <div class="ball_wrap start active">
+                <div class="ball_title">
+                  <i class="i1"></i>
+                  <p class="b_name">足球</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow active">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯&ensp;1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞&ensp;B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24&ensp;18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i2"></i>
+                  <p class="b_name">棒球</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i3"></i>
+                  <p class="b_name">籃球</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i4"></i>
+                  <p class="b_name">賽馬賽狗</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i5"></i>
+                  <p class="b_name">電競</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i6"></i>
+                  <p class="b_name">指數</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i7"></i>
+                  <p class="b_name">彩球</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i8"></i>
+                  <p class="b_name">冰球</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i9"></i>
+                  <p class="b_name">網球</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i10"></i>
+                  <p class="b_name">斯諾克</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i11"></i>
+                  <p class="b_name">排球</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i12"></i>
+                  <p class="b_name">賽車</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i13"></i>
+                  <p class="b_name">羽毛球</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i14"></i>
+                  <p class="b_name">美式足球</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i15"></i>
+                  <p class="b_name">沙灘足球</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap">
+                <div class="ball_title">
+                  <i class="i16"></i>
+                  <p class="b_name">乒乓球</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="talk_content">
+            <div class="live_talk">
+              <div class="talk_box">
+                <div class="talk_title">
+                  <span></span>
+                </div>
+                <div class="talk_box">
+                  <div class="time_tag">
+                    2020-06-29&ensp;18:06:02
+                  </div>
+                  <div class="play_wrap">
+                    <div class="p_name">
+                      <p>a48968446</p>
+                    </div>
+                    <div class="p_box">
+                      <p>耶耶耶</p>
+                    </div>
+                  </div>
+                  <div class="play_wrap">
+                    <div class="p_name">
+                      <p>a48968446</p>
+                    </div>
+                    <div class="p_box">
+                      <p>開始拉一一一</p>
+                    </div>
+                  </div>
+                  <div class="time_tag">
+                    2020-06-29&ensp;18:02:52
+                  </div>
+                  <div class="play_wrap">
+                    <div class="p_name">
+                      <p>soccerlover999</p>
+                    </div>
+                    <div class="p_box">
+                      <p>開始拉</p>
+                    </div>
+                  </div>
+                  <div class="play_wrap">
+                    <div class="p_name">
+                      <p>soccerlover999</p>
+                    </div>
+                    <div class="p_box">
+                      <p>布咸美恩斯贏面大</p>
+                    </div>
+                  </div>
+                  <div class="time_tag">
+                    2020-06-29&ensp;18:00:52
+                  </div>
+                  <div class="play_wrap myself">
+                    <div class="p_name">
+                      <p>user545</p>
+                    </div>
+                    <div class="p_box">
+                      <p>各位覺得哪一隊贏面大?</p>
+                    </div>
+                  </div>
+                  <div class="play_wrap myself">
+                    <div class="p_name">
+                      <p>user545</p>
+                    </div>
+                    <div class="p_box">
+                      <p>我振興卷押下去了Q_Q</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="talk_input">
+                <div class="input_wrap">
+                  <textarea name=""></textarea>
+                  <div class="i_icon_wrap">
+                    <i class="i1"></i>
+                    <i class="i2"></i>
+                  </div>
+                </div>
+                <div class="talk_btn">
+                  <div class="button_wrap">
+                    <button class="cancel">
+                      <p>取消</p>
+                    </button>
+                    <button class="send">
+                      <p>發送</p><span class="tri"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="search_group">
+    <div class="row">
+      <div class="s_box">
+        <i class="i1"></i>
+        <p>搜尋</p>
+      </div>
+      <div class="s_wrap">
+        <input type="text" placeholder="搜尋賽事">
+        <button>
+          <p>確認</p>
+        </button>
+      </div>
+      <div class="ul_wrap">
+        <div class="gt">
+          <div class="title">
+            <p>熱門賽事</p><span class="arrow"></span>
+          </div>
+          <ul>
+            <li><span class="i1"></span> 義大利甲組聯賽<p class="num">(12)</p>
+            </li>
+            <li><span class="i2"></span>法國甲組聯賽<p class="num">(12)</p>
+            </li>
+            <li><span class="i3"></span>英國甲組聯賽<p class="num">(12)</p>
+            </li>
+          </ul>
+        </div>
+        <div class="gt">
+          <div class="title">
+            <p>埃及</p><span class="arrow"></span>
+          </div>
+          <ul>
+            <li>埃及超級聯賽<p class="num">(12)</p>
+            </li>
+          </ul>
+        </div>
+        <div class="gt">
+          <div class="title">
+            <p>阿爾及利亞</p><span class="arrow"></span>
+          </div>
+          <ul>
+            <li>阿爾及利亞甲組聯賽<p class="num">(12)</p>
+            </li>
+          </ul>
+        </div>
+        <div class="gt">
+          <div class="title">
+            <p>巴林</p><span class="arrow"></span>
+          </div>
+          <ul>
+            <li>巴林超級聯賽<p class="num">(12)</p>
+            </li>
+          </ul>
+        </div>
+        <div class="gt">
+          <div class="title">
+            <p>巴西</p><span class="arrow"></span>
+          </div>
+          <ul>
+            <li>巴西杯<p class="num">(12)</p>
+            </li>
+            <li>巴西里約州甲組聯賽<p class="num">(12)</p>
+            </li>
+            <li>巴西巴西利亞甲組聯賽<p class="num">(12)</p>
+            </li>
+            <li>巴西巴亞諾甲組聯賽<p class="num">(12)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--row-->
+  </div>
+  <div class="f_wrap">
+    <div class="f_bot">
+      <ul class="yet active">
+        <li>
+          <i class="i2"></i>
+          <p class="red">存款</p>
+          <a href="./html/my/my_bill_save.html"></a>
+        </li>
+        <li>
+          <i class="i6"></i>
+          <p>幫助中心</p>
+          <a href="./html/my/my_help.html"></a>
+        </li>
+        <li>
+          <i class="i7"></i>
+          <p>在線客服</p>
+          <a href="./html/my/my_contact_us_sev.html"></a>
+        </li>
+        <li>
+          <i class="i8"></i>
+          <p>APP下載</p>
+          <a href="./html/my/my_download_app.html"></a>
+        </li>
+      </ul>
+      <ul class="in ">
+        <li>
+          <i class="i2"></i>
+          <p class="red">存款</p>
+          <a href="./html/my/my_bill_save.html"></a>
+        </li>
+        <li>
+          <i class="i3"></i>
+          <p>轉點</p>
+          <a href="./html/my/my_bill_trans.html"></a>
+        </li>
+        <li>
+          <i class="i4"></i>
+          <p>交易紀錄</p>
+          <span class="nb active">6</span>
+          <a href="./html/my/my_bill_trans_record.html"></a>
+        </li>
+        <li>
+          <i class="i5"></i>
+          <p>投注紀錄</p>
+          <span class="nb active">3</span>
+          <a href="./html/my/my_bill_record.html"></a>
+        </li>
+        <li>
+          <i class="i6"></i>
+          <p>幫助中心</p>
+          <a href="./html/my/my_help.html"></a>
+        </li>
+        <li>
+          <i class="i7"></i>
+          <p>在線客服</p>
+          <a href="./html/my/my_contact_us_sev.html"></a>
+        </li>
+        <li>
+          <i class="i8"></i>
+          <p>APP下載</p>
+          <a href="./html/my/my_download_app.html"></a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="bg_t"></div>
+</div>
+<!--cn-->
+<div class="container en" style='display: none;'>
+  <main>
+    <div class="left">
+      <ul class="index">
+        <li><i class="i1"></i>
+          <p>my Games</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i2"></i>
+          <p>highlight</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i3"></i>
+          <p>soccer</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i4"></i>
+          <p>basball</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i5"></i>
+          <p>basketball</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i6"></i>
+          <p>horse/ dog racing</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i7"></i>
+          <p>esports</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i8"></i>
+          <p>stock index</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i9"></i>
+          <p>lottery</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i10"></i>
+          <p>ice hockey</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i11"></i>
+          <p>tennis</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i12"></i>
+          <p>snooker</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i13"></i>
+          <p>volleyball</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i14"></i>
+          <p>motorsport</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i15"></i>
+          <p>badminton</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i16"></i>
+          <p>football</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i17"></i>
+          <p>beach soccer</p>
+          <p class="num">295</p>
+        </li>
+        <li><i class="i18"></i>
+          <p>table tennis</p>
+          <p class="num">295</p>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <!--0623 card div是方格會被float left影響 使用子物件請用span 或者p i-->
+
+      <div class="search_bar">
+        <div class="day_wrap">
+          <div class="l_btn"></div>
+          <!-- <p>今日</p> -->
+          <p>Today</p>
+          <div class="r_btn"></div>
+        </div>
+        <div class="line"></div>
+        <div class="tag_wrap">
+          <!-- <span class="tag">明日</span> -->
+          <span class="tag">Tomorrow</span>
+          <!-- <span class="tag">本週</span> -->
+          <span class="tag">This&ensp;Week</span>
+          <!-- <span class="tag">下週</span> -->
+          <span class="tag">Newt&ensp;Week</span>
+        </div>
+        <!-- <p class="set">設定</p> -->
+        <p class="set">Set&ensp;up</p>
+        <span class="arrow"></span>
+        <div class="right_box">
+          <p>select league</p>
+          <div class="line"></div>
+          <p>sort by time</p>
+          <span class="arrow"></span>
+        </div>
+      </div>
+
+    </div>
+    <div class="right_2">
+      <div class="live_page">
+        <div class="live_title">
+          <div class="wrap">
+            <div class="l_box"><span class="icon_tv_gold"></span>
+              <p>live</p>
+            </div>
+            <div class="r_box">
+              <p>teach</p><span class="icon_infor"></span>
+            </div>
+            <div class="infor_con">
+              <p>
+                此版面顯示的所有直播內容僅參考，會員亦可
+                使用此內容為指南。我們將盡最大努力確保顯
+                示的內容是正確的，如有錯誤，本公司不承擔
+                任何責任。對於滾球比分，例如滾球讓球，將
+                以投注時在投注單中顯示的正確本分為準。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="live_view">
+          <div class="live_title for_view">
+            <div class="l_box">
+              <p>布咸美恩斯&ensp;1905<span>接球員_Sea_food</span></p>
+            </div>
+            <div class="m_box">
+              <span class="point_left">1</span>
+              <p class="blue">VS</p><span class="point_right">1</span>
+            </div>
+            <div class="r_box">
+              <p>布拉格斯拉維亞B<span>接球員_Chickens</span></p>
+            </div>
+          </div>
+          <div class="live_box">
+            <div class="live_box_in"></div>
+          </div>
+        </div>
+        <div class="live_games">
+          <div class="live_tag">
+            <button class="live_1 active">Live</button>
+            <button class="live_2">Chat Room</button>
+          </div>
+          <div class="live_content active">
+            <div class="live_balls active">
+              <div class="ball_wrap start">
+                <div class="ball_title active">
+                  <i class="i1"></i>
+                  <p class="b_name">soccer</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯&ensp;1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞&ensp;B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24&ensp;18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i2"></i>
+                  <p class="b_name">basball</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i3"></i>
+                  <p class="b_name">basketball</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i4"></i>
+                  <p class="b_name">horse/ dog racing</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i5"></i>
+                  <p class="b_name">esports</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i6"></i>
+                  <p class="b_name">stock index</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i7"></i>
+                  <p class="b_name">lottery</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i8"></i>
+                  <p class="b_name">ice hockey</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i9"></i>
+                  <p class="b_name">tennis</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i10"></i>
+                  <p class="b_name">snooker</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i11"></i>
+                  <p class="b_name">volleyball</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i12"></i>
+                  <p class="b_name">motorsport</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i13"></i>
+                  <p class="b_name">badminton</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i14"></i>
+                  <p class="b_name">football</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i15"></i>
+                  <p class="b_name">beach soccer</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="ball_wrap start">
+                <div class="ball_title">
+                  <i class="i16"></i>
+                  <p class="b_name">table tennis</p>
+                  <div class="right_box">
+                    <p>20</p>
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+                <ul class="ball_drow">
+                  <li>
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="drow_left">
+                      <h1 class="t_hidden">俱樂部友誼賽</h1>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
+                    </div>
+                    <div class="drow_right">
+                      <div class="change_wrap">
+                        <h1 class="">06/24 18:00</h1>
+                        <div class="active doing_wrap">
+                          <p>直播中</p><span class="red_point"></span>
+                        </div>
+                      </div>
+                      <div class="btn_wrap">
+                        <button>動畫</button><button>直播</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="talk_content">
+            <div class="live_talk">
+              <div class="talk_box">
+                <div class="talk_title">
+                  <span></span>
+                </div>
+                <div class="talk_box">
+                  <div class="time_tag">
+                    2020-06-29&ensp;18:06:02
+                  </div>
+                  <div class="play_wrap">
+                    <div class="p_name">
+                      <p>a48968446</p>
+                    </div>
+                    <div class="p_box">
+                      <p>耶耶耶</p>
+                    </div>
+                  </div>
+                  <div class="play_wrap">
+                    <div class="p_name">
+                      <p>a48968446</p>
+                    </div>
+                    <div class="p_box">
+                      <p>開始拉一一一</p>
+                    </div>
+                  </div>
+                  <div class="time_tag">
+                    2020-06-29&ensp;18:02:52
+                  </div>
+                  <div class="play_wrap">
+                    <div class="p_name">
+                      <p>soccerlover999</p>
+                    </div>
+                    <div class="p_box">
+                      <p>開始拉</p>
+                    </div>
+                  </div>
+                  <div class="play_wrap">
+                    <div class="p_name">
+                      <p>soccerlover999</p>
+                    </div>
+                    <div class="p_box">
+                      <p>布咸美恩斯贏面大</p>
+                    </div>
+                  </div>
+                  <div class="time_tag">
+                    2020-06-29&ensp;18:00:52
+                  </div>
+                  <div class="play_wrap myself">
+                    <div class="p_name">
+                      <p>user545</p>
+                    </div>
+                    <div class="p_box">
+                      <p>各位覺得哪一隊贏面大?</p>
+                    </div>
+                  </div>
+                  <div class="play_wrap myself">
+                    <div class="p_name">
+                      <p>user545</p>
+                    </div>
+                    <div class="p_box">
+                      <p>我振興卷押下去了Q_Q</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="talk_input">
+                <div class="input_wrap">
+                  <textarea name=""></textarea>
+                  <div class="i_icon_wrap">
+                    <i class="i1"></i>
+                    <i class="i2"></i>
+                  </div>
+                </div>
+                <div class="talk_btn">
+                  <div class="button_wrap">
+                    <button class="cancel">Cancel</button>
+                    <button class="send">Send<span class="tri"></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="search_group">
+    <div class="row">
+      <div class="s_box">
+        <i class="i1"></i>
+        <p>搜尋</p>
+      </div>
+      <div class="s_wrap">
+        <input type="text" placeholder="搜尋賽事">
+        <button>
+          <p>確認</p>
+        </button>
+      </div>
+      <div class="ul_wrap">
+        <div class="gt">
+          <div class="title">
+            <p>熱門賽事</p><span class="arrow"></span>
+          </div>
+          <ul>
+            <li><span class="i1"></span> 義大利甲組聯賽<p class="num">(12)</p>
+            </li>
+            <li><span class="i2"></span>法國甲組聯賽<p class="num">(12)</p>
+            </li>
+            <li><span class="i3"></span>英國甲組聯賽<p class="num">(12)</p>
+            </li>
+          </ul>
+        </div>
+        <div class="gt">
+          <div class="title">
+            <p>埃及</p><span class="arrow"></span>
+          </div>
+          <ul>
+            <li>埃及超級聯賽<p class="num">(12)</p>
+            </li>
+          </ul>
+        </div>
+        <div class="gt">
+          <div class="title">
+            <p>阿爾及利亞</p><span class="arrow"></span>
+          </div>
+          <ul>
+            <li>阿爾及利亞甲組聯賽<p class="num">(12)</p>
+            </li>
+          </ul>
+        </div>
+        <div class="gt">
+          <div class="title">
+            <p>巴林</p><span class="arrow"></span>
+          </div>
+          <ul>
+            <li>巴林超級聯賽<p class="num">(12)</p>
+            </li>
+          </ul>
+        </div>
+        <div class="gt">
+          <div class="title">
+            <p>巴西</p><span class="arrow"></span>
+          </div>
+          <ul>
+            <li>巴西杯<p class="num">(12)</p>
+            </li>
+            <li>巴西里約州甲組聯賽<p class="num">(12)</p>
+            </li>
+            <li>巴西巴西利亞甲組聯賽<p class="num">(12)</p>
+            </li>
+            <li>巴西巴亞諾甲組聯賽<p class="num">(12)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--row-->
+  </div>
+  <div class="f_wrap">
+    <div class="f_bot">
+      <ul class="yet active">
+        <li>
+          <i class="i2"></i>
+          <p class="red">deposit</p>
+        </li>
+        <li>
+          <i class="i6"></i>
+          <p>help</p>
+        </li>
+        <li>
+          <i class="i7"></i>
+          <p>customer service</p>
+        </li>
+        <li>
+          <i class="i8"></i>
+          <p>download app</p>
+        </li>
+      </ul>
+      <ul class="in ">
+        <li>
+          <i class="i2"></i>
+          <p class="red">deposit</p>
+          <span class="nb">1</span>
+        </li>
+        <li>
+          <i class="i3"></i>
+          <p>transfer</p>
+          <span class="nb">2</span>
+        </li>
+        <li>
+          <i class="i4"></i>
+          <p>transaction</br>record</p>
+          <span class="nb active">6</span>
+        </li>
+        <li>
+          <i class="i5"></i>
+          <p>betting<br>record</p>
+          <span class="nb active">3</span>
+        </li>
+        <li>
+          <i class="i6"></i>
+          <p>help</p>
+          <span class="nb ">5</span>
+        </li>
+        <li>
+          <i class="i7"></i>
+          <p>customer<br />service</p>
+          <span class="nb">6</span>
+        </li>
+        <li>
+          <i class="i8"></i>
+          <p>download<br />app</p>
+          <span class="nb">7</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="bg_t"></div>
+</div>
+<!--en-->
+
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
